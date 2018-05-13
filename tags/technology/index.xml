@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on The Realm of Space</title>
+    <link>https://zkanda.github.io/tags/technology/</link>
+    <description>Recent content in Technology on The Realm of Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 19 Mar 2018 21:55:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://zkanda.github.io/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Our experience in resizing an EBS volume in EC2 instances.</title>
+      <link>https://zkanda.github.io/code/resize-ebs-volume/</link>
+      <pubDate>Mon, 19 Mar 2018 21:55:57 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/resize-ebs-volume/</guid>
+      <description>Increasing disk space without downtime.
+So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
+For the first time we search on how to do this, there&amp;rsquo;s many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.</description>
+    </item>
+    
+    <item>
+      <title>Disabling UDP in memcached.</title>
+      <link>https://zkanda.github.io/code/disabling-udp-in-memcached/</link>
+      <pubDate>Wed, 07 Mar 2018 17:54:46 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/disabling-udp-in-memcached/</guid>
+      <description>One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
+For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
+It turns out memcached by default listens to both TCP and UDP, since we don&amp;rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).</description>
+    </item>
+    
+    <item>
+      <title>Updating a configmap/secrets in Kubernetes</title>
+      <link>https://zkanda.github.io/code/updating-a-configmap-secrets-in-kubernetes/</link>
+      <pubDate>Tue, 06 Mar 2018 01:45:18 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/updating-a-configmap-secrets-in-kubernetes/</guid>
+      <description>At work, we started using Kubernetes for stateless application. We frequently change the values of configmap/secrets especially in staging environments, however, this is still not baked in to k8s.
+How to do it?
+You have to replaced a config to update it.
+For example, if you create a configmap like this:
+kubectl create configmap site-config --from-file=nginx.conf  If you want to update that, you have to add the command above with</description>
+    </item>
+    
+    <item>
+      <title>golang: defer inside a for loop</title>
+      <link>https://zkanda.github.io/code/defer-inside-a-for-loop/</link>
+      <pubDate>Wed, 02 Aug 2017 09:17:25 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/defer-inside-a-for-loop/</guid>
+      <description>So I have an infinite for loop however I want to use defer to make my intention clearer.
+Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This in turn would give you memory leak.
+As neat as it could be, you can use a closure/anonymous function for this.
+for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
+    </item>
+    
+    <item>
+      <title>Running Elasticsearch on a 2GB Digital Ocean Droplet</title>
+      <link>https://zkanda.github.io/code/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</link>
+      <pubDate>Mon, 03 Jul 2017 04:46:21 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
+      <description>So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
+Did some research and found this docs on increasing max_map_count:
+echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>
+    </item>
+    
+    <item>
+      <title>GopherConSG 2017 Reflection</title>
+      <link>https://zkanda.github.io/code/gophercon-sg/</link>
+      <pubDate>Sat, 27 May 2017 02:52:06 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/gophercon-sg/</guid>
+      <description>This is first time attending a conference outside my country. It was pretty exciting and scary because I&amp;rsquo;m going alone but nonetheless it was an amazing experience.
+I met a couple of interesting people and mostly I think it boost more my confidence in travelling.
+The first day was all about learning Go for Intermediate developers by William Kennedy.
+I learned quite a lot, although I&amp;rsquo;ve been using Go in work for some time now, I admit that I still have a long way to go.</description>
+    </item>
+    
+    <item>
+      <title>Installing python packages directly from Github using pip.</title>
+      <link>https://zkanda.github.io/code/installing-python-packages-directly-from-github-using-pip/</link>
+      <pubDate>Mon, 05 Dec 2016 03:17:08 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/installing-python-packages-directly-from-github-using-pip/</guid>
+      <description>Recently, I needed to install a package directly from Github which I&amp;rsquo;m trying to contribute into.
+For example you have this url: https://github.com/zkanda/lambda-uploader
+What you can do is just add git+ as prefix in the URL.
+Here&amp;rsquo;s how you can do it!
+pip install git+https://github.com/zkanda/lambda-uploader  But the code that I want to install is from another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
+    </item>
+    
+    <item>
+      <title>Setting vi mode on IPython 5</title>
+      <link>https://zkanda.github.io/code/setting-vi-mode-on-ipython-5/</link>
+      <pubDate>Wed, 13 Jul 2016 20:59:28 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/setting-vi-mode-on-ipython-5/</guid>
+      <description>I just upgraded my IPython version to 5 and one thing that I&amp;rsquo;m missing is my vi mode binding. When I read the changelog, they now replace readline with prompt_toolkit a pure python interactive command line prompt. This is very nice because it supports all platform that python supports.
+So to bring back your vi binding, you need to do this.
+ipython profile create  This will create a default profile where you can change your IPython configuration.</description>
+    </item>
+    
+    <item>
+      <title>Compiling the latest beta kernel in ArchLinux</title>
+      <link>https://zkanda.github.io/code/compiling-the-latest-beta-kernel-in-archlinux/</link>
+      <pubDate>Fri, 17 Jun 2016 00:19:50 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/compiling-the-latest-beta-kernel-in-archlinux/</guid>
+      <description>You have a new laptop, you install ArchLinux on it and seems like a some things is missing. Certainly this is the case for me, one of this is suspend feature, when doing, my laptop just seems to boot as if I shutdown it, my application is not persisted. Another is a fix for my headphone noise issue, just to name a few.
+ Some things is missing!
+ One of the few things you can try is to install the latest beta kernel.</description>
+    </item>
+    
+  </channel>
+</rss>

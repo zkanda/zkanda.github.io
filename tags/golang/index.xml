@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on Realm of Space</title>
+    <title>Golang on The Realm of Space</title>
     <link>https://zkanda.github.io/tags/golang/</link>
-    <description>Recent content in Golang on Realm of Space</description>
+    <description>Recent content in Golang on The Realm of Space</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>All rights reserved</copyright>
+    <language>en-US</language>
     <lastBuildDate>Fri, 15 Sep 2017 15:06:40 +0800</lastBuildDate>
     
 	<atom:link href="https://zkanda.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
@@ -14,11 +13,35 @@
     
     <item>
       <title>Advance Testing in Go</title>
-      <link>https://zkanda.github.io/advance-testing-in-go/</link>
+      <link>https://zkanda.github.io/code/advance-testing-in-go/</link>
       <pubDate>Fri, 15 Sep 2017 15:06:40 +0800</pubDate>
       
-      <guid>https://zkanda.github.io/advance-testing-in-go/</guid>
+      <guid>https://zkanda.github.io/code/advance-testing-in-go/</guid>
       <description>Test Methodology  Subtest  Closures Can target subtests Can nest subtests further  Table Driven Test  Low overhead to add new test cases Make testing exhaustive scenarios simple Makes reproducing reported issues simple Do this pattern a lot Followw pattern even for single cases, if it&amp;rsquo;s possible to grow Consider naming cases  Text fixtures.  go test sets pwd as package directory Use relative path &amp;ldquo;test-fixtures&amp;rdquo; directory as a place to store test data Very useful for loading config, model data, binary data, etc  Golden Files(Test Flags)  Compare complex test out to a file that has the expected result.</description>
+    </item>
+    
+    <item>
+      <title>golang: defer inside a for loop</title>
+      <link>https://zkanda.github.io/code/defer-inside-a-for-loop/</link>
+      <pubDate>Wed, 02 Aug 2017 09:17:25 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/defer-inside-a-for-loop/</guid>
+      <description>So I have an infinite for loop however I want to use defer to make my intention clearer.
+Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This in turn would give you memory leak.
+As neat as it could be, you can use a closure/anonymous function for this.
+for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
+    </item>
+    
+    <item>
+      <title>GopherConSG 2017 Reflection</title>
+      <link>https://zkanda.github.io/code/gophercon-sg/</link>
+      <pubDate>Sat, 27 May 2017 02:52:06 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/gophercon-sg/</guid>
+      <description>This is first time attending a conference outside my country. It was pretty exciting and scary because I&amp;rsquo;m going alone but nonetheless it was an amazing experience.
+I met a couple of interesting people and mostly I think it boost more my confidence in travelling.
+The first day was all about learning Go for Intermediate developers by William Kennedy.
+I learned quite a lot, although I&amp;rsquo;ve been using Go in work for some time now, I admit that I still have a long way to go.</description>
     </item>
     
   </channel>

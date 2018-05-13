@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archlinux on The Realm of Space</title>
+    <link>https://zkanda.github.io/categories/archlinux/</link>
+    <description>Recent content in Archlinux on The Realm of Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 30 Jan 2017 04:35:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://zkanda.github.io/categories/archlinux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recently upgraded Windows on my dual boot laptop causes problems on my bootloader.</title>
+      <link>https://zkanda.github.io/code/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</link>
+      <pubDate>Mon, 30 Jan 2017 04:35:54 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</guid>
+      <description>So I upgraded my Windows software to the latest insider preview and it kind of messed up my laptop.
+Here&amp;rsquo;s the error message:
+EFI stub: ERROR: failed to read file. Trying to load files to higher address EFI stub: ERROR: failed to read file.  Here&amp;rsquo;s the step I did to resolved it.
+ Boot in an ArchLinux liveusb. Mount your root and boot partition. Chroot into it. And reinstall the bootloader.</description>
+    </item>
+    
+    <item>
+      <title>Compiling the latest beta kernel in ArchLinux</title>
+      <link>https://zkanda.github.io/code/compiling-the-latest-beta-kernel-in-archlinux/</link>
+      <pubDate>Fri, 17 Jun 2016 00:19:50 +0000</pubDate>
+      
+      <guid>https://zkanda.github.io/code/compiling-the-latest-beta-kernel-in-archlinux/</guid>
+      <description>You have a new laptop, you install ArchLinux on it and seems like a some things is missing. Certainly this is the case for me, one of this is suspend feature, when doing, my laptop just seems to boot as if I shutdown it, my application is not persisted. Another is a fix for my headphone noise issue, just to name a few.
+ Some things is missing!
+ One of the few things you can try is to install the latest beta kernel.</description>
+    </item>
+    
+  </channel>
+</rss>
