@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Zakatell&#39;s Blog</title>
+    <link>https://blog.zkanda.io/tags/linux/</link>
+    <description>Recent content in Linux on Zakatell&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Mar 2018 22:55:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zkanda.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>our experience in resizing an ebs volume in ec2 instances.</title>
+      <link>https://blog.zkanda.io/post/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/post/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
+      <description>Increasing disk space without downtime.
+So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
+For the first time we search on how to do this, there&amp;rsquo;s many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.</description>
+    </item>
+    
+    <item>
+      <title>running elasticsearch on a 2gb digital ocean droplet</title>
+      <link>https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</link>
+      <pubDate>Mon, 03 Jul 2017 05:46:21 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
+      <description>So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
+Did some research and found this docs on increasing max_map_count:
+echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>
+    </item>
+    
+    <item>
+      <title>compiling a beta kernel in archlinux</title>
+      <link>https://blog.zkanda.io/post/compiling-the-latest-beta-kernel-in-archlinux/</link>
+      <pubDate>Fri, 17 Jun 2016 01:19:50 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/post/compiling-the-latest-beta-kernel-in-archlinux/</guid>
+      <description>You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
+ one missing feature was suspend, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
+    </item>
+    
+  </channel>
+</rss>

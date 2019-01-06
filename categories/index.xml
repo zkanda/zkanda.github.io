@@ -1,15 +1,222 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Realm of Space</title>
-    <link>https://zkanda.github.io/categories/</link>
-    <description>Recent content in Categories on Realm of Space</description>
+    <title>Categories on Zakatell&#39;s Blog</title>
+    <link>https://blog.zkanda.io/categories/</link>
+    <description>Recent content in Categories on Zakatell&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Mon, 30 Jan 2017 05:35:54 +0000</lastBuildDate>
     
-	<atom:link href="https://zkanda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.zkanda.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Me</title>
+      <link>https://blog.zkanda.io/categories/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/about-me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archlinux</title>
+      <link>https://blog.zkanda.io/categories/archlinux/</link>
+      <pubDate>Mon, 30 Jan 2017 05:35:54 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aws</title>
+      <link>https://blog.zkanda.io/categories/aws/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootloader</title>
+      <link>https://blog.zkanda.io/categories/bootloader/</link>
+      <pubDate>Mon, 30 Jan 2017 05:35:54 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/bootloader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compile</title>
+      <link>https://blog.zkanda.io/categories/compile/</link>
+      <pubDate>Fri, 17 Jun 2016 01:19:50 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/compile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configmap</title>
+      <link>https://blog.zkanda.io/categories/configmap/</link>
+      <pubDate>Tue, 06 Mar 2018 02:45:18 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/configmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://blog.zkanda.io/categories/devops/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://blog.zkanda.io/categories/elasticsearch/</link>
+      <pubDate>Mon, 03 Jul 2017 05:46:21 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://blog.zkanda.io/categories/git/</link>
+      <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://blog.zkanda.io/categories/golang/</link>
+      <pubDate>Wed, 02 Aug 2017 10:17:25 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ipython</title>
+      <link>https://blog.zkanda.io/categories/ipython/</link>
+      <pubDate>Wed, 13 Jul 2016 21:59:28 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/ipython/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kernel</title>
+      <link>https://blog.zkanda.io/categories/kernel/</link>
+      <pubDate>Fri, 17 Jun 2016 01:19:50 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.zkanda.io/categories/kubernetes/</link>
+      <pubDate>Tue, 06 Mar 2018 02:45:18 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://blog.zkanda.io/categories/life/</link>
+      <pubDate>Mon, 05 Mar 2018 23:46:53 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.zkanda.io/categories/linux/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pip</title>
+      <link>https://blog.zkanda.io/categories/pip/</link>
+      <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://blog.zkanda.io/categories/python/</link>
+      <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secrets</title>
+      <link>https://blog.zkanda.io/categories/secrets/</link>
+      <pubDate>Tue, 06 Mar 2018 02:45:18 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/secrets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://blog.zkanda.io/categories/software/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://blog.zkanda.io/categories/technology/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thoughts</title>
+      <link>https://blog.zkanda.io/categories/thoughts/</link>
+      <pubDate>Mon, 05 Mar 2018 23:46:53 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/thoughts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vi Mode</title>
+      <link>https://blog.zkanda.io/categories/vi-mode/</link>
+      <pubDate>Wed, 13 Jul 2016 21:59:28 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/vi-mode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://blog.zkanda.io/categories/windows/</link>
+      <pubDate>Mon, 30 Jan 2017 05:35:54 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/categories/windows/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.53" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="https://blog.zkanda.io/post/disabling-udp-in-memcached/" />
+  <link rel="canonical" href="https://blog.zkanda.io/post/disabling-udp-in-memcached/" />
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zkanda.io"
+      },
+      "articleSection" : "post",
+      "name" : "disabling udp in memcached.",
+      "headline" : "disabling udp in memcached.",
+      "description" : "One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
+For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
+It turns out memcached by default listens to both TCP and UDP, since we don&rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2018",
+      "datePublished": "2018-03-07 18:54:46 &#43;0000 UTC",
+      "dateModified" : "2018-03-07 18:54:46 &#43;0000 UTC",
+      "url" : "https://blog.zkanda.io/post/disabling-udp-in-memcached/",
+      "keywords" : [ "software","devops","technology","Blog", "Joway's Blog", "Joway" ]
+  }
+</script>
+
+  <title>disabling udp in memcached. - Zakatell&#39;s Blog</title>
+  <meta property="og:title" content="disabling udp in memcached. - Zakatell&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
+For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
+It turns out memcached by default listens to both TCP and UDP, since we don&rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP)." />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css"
+  />
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Zakatell&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">disabling udp in memcached.</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2018-03-07 18:54:46 UTC">
+                  07 Mar 2018
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="">@</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.</p>
+
+<p>For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.</p>
+
+<p>It turns out memcached by default listens to both TCP and UDP, since we don&rsquo;t have <em>yet</em> a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).</p>
+
+<p>Here&rsquo;s how to do it, add this line in <code>/etc/memcached.conf</code></p>
+
+<pre><code class="language-txt"># Disable UDP
+-U 0
+</code></pre>
+
+<p>Simple fix yet effective for now.</p>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  </body>
+</html>

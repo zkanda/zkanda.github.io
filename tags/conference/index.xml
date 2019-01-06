@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conference on Zakatell&#39;s Blog</title>
+    <link>https://blog.zkanda.io/tags/conference/</link>
+    <description>Recent content in Conference on Zakatell&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 May 2017 05:20:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.zkanda.io/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gophercon sg 2017 reflection</title>
+      <link>https://blog.zkanda.io/post/gophercon-sg/</link>
+      <pubDate>Sat, 27 May 2017 05:20:35 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/post/gophercon-sg/</guid>
+      <description>This is first time attending a conference outside my country. It was pretty exciting and scary because I&amp;rsquo;m going alone but nonetheless it was an amazing experience.
+I met a couple of interesting people and mostly I think it boost more my confidence in travelling.
+The first day was all about learning Go for Intermediate developers by William Kennedy.
+I learned quite a lot, although I&amp;rsquo;ve been using Go in work for some time now, I admit that I still have a long way to go.</description>
+    </item>
+    
+  </channel>
+</rss>

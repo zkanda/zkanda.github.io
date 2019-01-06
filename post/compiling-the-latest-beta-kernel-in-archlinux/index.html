@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.53" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="https://blog.zkanda.io/post/compiling-the-latest-beta-kernel-in-archlinux/" />
+  <link rel="canonical" href="https://blog.zkanda.io/post/compiling-the-latest-beta-kernel-in-archlinux/" />
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zkanda.io"
+      },
+      "articleSection" : "post",
+      "name" : "compiling a beta kernel in archlinux",
+      "headline" : "compiling a beta kernel in archlinux",
+      "description" : "You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
+ one missing feature was suspend, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&hellip;  One of the few things you can try is to install the latest beta kernel.",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2016",
+      "datePublished": "2016-06-17 01:19:50 &#43;0000 UTC",
+      "dateModified" : "2016-06-17 01:19:50 &#43;0000 UTC",
+      "url" : "https://blog.zkanda.io/post/compiling-the-latest-beta-kernel-in-archlinux/",
+      "keywords" : [ "archlinux","kernel","compile","linux","technology","Blog", "Joway's Blog", "Joway" ]
+  }
+</script>
+
+  <title>compiling a beta kernel in archlinux - Zakatell&#39;s Blog</title>
+  <meta property="og:title" content="compiling a beta kernel in archlinux - Zakatell&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
+ one missing feature was suspend, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&hellip;  One of the few things you can try is to install the latest beta kernel." />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css"
+  />
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Zakatell&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">compiling a beta kernel in archlinux</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2016-06-17 01:19:50 UTC">
+                  17 Jun 2016
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="">@</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:</p>
+
+<ul>
+<li>one missing feature was suspend, my laptop just seems to boot as if I turned off everything, my application is not persisted</li>
+<li>another is a fix for my headphone noise issue, just to name a few&hellip;</li>
+</ul>
+
+<p>One of the few things you can try is to install the latest beta kernel. In my case it&rsquo;s Linux 4.6. This fix all of the issued I outlined above.</p>
+
+<p>With that said, you need to err on the side of caution, this can make your computer not boot, so please have an CD/Flash drive to boot from in case something is wrong so you can revert back.</p>
+
+<p>All of these process is actually not so bad, so what do you need first.</p>
+
+<ol>
+<li>Get the package build: <code>git clone --depth 1 git://git.archlinux.org/svntogit/packages.git linux-packages</code></li>
+<li><code>cd linux-packages/linux/trunk</code></li>
+<li><code>makepkg -s</code> - This will take some time, so get you coffee or do something to make use of your time.</li>
+<li><code>pacman -U *.pkg.tar</code></li>
+</ol>
+
+<p>Reboot your system and voila.</p>
+
+<p>There is also <a href="https://aur.archlinux.org/packages/linux-mainline/">linux-mainline aur</a> to automatically do it for you. However at the time of the writing, it&rsquo;s already on <code>4.7rc1</code> and it&rsquo;s really bleeding edge and <code>4.6</code> seems to be enough for now.</p>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  </body>
+</html>

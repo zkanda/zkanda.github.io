@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.53" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/" />
+  <link rel="canonical" href="https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/" />
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https://blog.zkanda.io"
+      },
+      "articleSection" : "post",
+      "name" : "running elasticsearch on a 2gb digital ocean droplet",
+      "headline" : "running elasticsearch on a 2gb digital ocean droplet",
+      "description" : "So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
+Did some research and found this docs on increasing max_map_count:
+echo &quot;vm.max_map_count=262144&quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-07-03 05:46:21 &#43;0000 UTC",
+      "dateModified" : "2017-07-03 05:46:21 &#43;0000 UTC",
+      "url" : "https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/",
+      "keywords" : [ "technology","elasticsearch","linux","Blog", "Joway's Blog", "Joway" ]
+  }
+</script>
+
+  <title>running elasticsearch on a 2gb digital ocean droplet - Zakatell&#39;s Blog</title>
+  <meta property="og:title" content="running elasticsearch on a 2gb digital ocean droplet - Zakatell&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
+Did some research and found this docs on increasing max_map_count:
+echo &quot;vm.max_map_count=262144&quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production." />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css"
+  />
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Zakatell&#39;s Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post" id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">running elasticsearch on a 2gb digital ocean droplet</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2017-07-03 05:46:21 UTC">
+                  03 Jul 2017
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="">@</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            <p>So I want to run <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> on a very limited memory machine and I keep running on this error: <code>cannot allocate memory</code>.</p>
+
+<p>Did some research and found this <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html">docs</a> on increasing <code>max_map_count</code>:</p>
+
+<pre><code class="language-sh">echo &quot;vm.max_map_count=262144&quot; | sudo tee -a /etc/sysctl.conf
+sudo sysctl -w vm.max_map_count=262144
+</code></pre>
+
+<p>But the problem still persist, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</p>
+
+<p>Swap memory to the rescue.</p>
+
+<pre><code class="language-sh">fallocate -l 2G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+</code></pre>
+
+<p>Run your elasticsearch and it should now be good.</p>
+
+<p>Small Rant: I don&rsquo;t get why we need more than 2GB of memory to just test ES.</p>
+
+          </div>
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  </body>
+</html>
