@@ -31,7 +31,7 @@ var i int var p P s := `{&amp;quot;t&amp;quot;: &amp;quot;3460&amp;quot;}` // sh
       <guid>https://blog.zkanda.io/post/a-possible-list-to-add-when-writing-a-test/</guid>
       <description>When writing test, the documentation that the API your integrating into only list all the good values that they intend to deliver to you or the other way around.
 What I observed from working with my colleague Harmen is this:
- A positive test for happy path A negative test An empty input A malformed data  I might add more example in the future but for now, I&amp;rsquo;ll try to follow this guideline.</description>
+ A negative test A positive test for happy path An empty input A malformed data  I might add more example in the future but for now, I&amp;rsquo;ll try to follow this guideline.</description>
     </item>
     
     <item>
