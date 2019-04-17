@@ -1,0 +1,9 @@
+baseURL = "https://blog.zkanda.io"
+languageCode = "en-us"
+title = "Inside My Minds Journey"
+theme = "yinyang"
+DefaultContentLanguage = "en"
+
+[author]
+  name = "Zakatell Kanda"
+  homepage = "https://blog.zkanda.io/"
