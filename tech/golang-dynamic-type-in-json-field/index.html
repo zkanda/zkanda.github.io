@@ -41,6 +41,16 @@ You&rsquo;ll have to specify the field type as interface.
 type P struct { T interface{} `json:&quot;t&quot;` }  After that you&rsquo;ll need to use switch to determine the type. In our case, we needed it as int.
 var i int var p P s := `{&quot;t&quot;: &quot;3460&quot;}` // should also work with // s := `{&quot;t&quot;: 3460}` if err := json." />
 
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48807928-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-48807928-3');
+  </script>
+
   <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />

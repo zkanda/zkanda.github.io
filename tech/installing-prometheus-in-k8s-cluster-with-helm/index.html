@@ -40,6 +40,16 @@
 kubectl create serviceaccount tiller --namespace kube-system kubectl create clusterrolebinding tiller-rb --clusterrole=cluster-admin --serviceaccount=kube-system:tiller helm init --service-account tiller  Get the values.yaml from here Edit some things that you want to tweak, for us, we change the CPU limit to a lower value. Then just install Prometheus:
 helm install -f values.yaml --name prometheus stable/prometheus  Ideally, this should be installed in another namespace but we will keep it simple for now." />
 
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48807928-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-48807928-3');
+  </script>
+
   <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />
