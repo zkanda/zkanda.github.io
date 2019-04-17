@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.55.1" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Zakatell Kanda" />
+  <meta property="og:url" content="https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/" />
+  <link rel="canonical" href="https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.zkanda.io"
+      },
+      "articleSection" : "tech",
+      "name" : "updating a configmap\/secrets in kubernetes",
+      "headline" : "updating a configmap\/secrets in kubernetes",
+      "description" : "At work, we started using Kubernetes for stateless application. We frequently change the values of configmap\/secrets especially in staging environments, however, this is still not baked in to k8s.\nHow to do it?\nYou have to replaced a config to update it.\nFor example, if you create a configmap like this:\nkubectl create configmap site-config --from-file=nginx.conf  If you want to update that, you have to add the command above with",
+      "inLanguage" : "en-US",
+      "author" : "Zakatell Kanda",
+      "creator" : "Zakatell Kanda",
+      "publisher": "Zakatell Kanda",
+      "accountablePerson" : "Zakatell Kanda",
+      "copyrightHolder" : "Zakatell Kanda",
+      "copyrightYear" : "2018",
+      "datePublished": "2018-03-06 02:45:18 \x2b0000 UTC",
+      "dateModified" : "2018-03-06 02:45:18 \x2b0000 UTC",
+      "url" : "https:\/\/blog.zkanda.io\/tech\/updating-a-configmap-secrets-in-kubernetes\/",
+      "keywords" : [ "technology","software","kubernetes","configmap","secrets", ]
+  }
+</script>
+<title>updating a configmap/secrets in kubernetes - Inside My Minds Journey</title>
+  <meta property="og:title" content="updating a configmap/secrets in kubernetes - Inside My Minds Journey" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="At work, we started using Kubernetes for stateless application. We frequently change the values of configmap/secrets especially in staging environments, however, this is still not baked in to k8s.
+How to do it?
+You have to replaced a config to update it.
+For example, if you create a configmap like this:
+kubectl create configmap site-config --from-file=nginx.conf  If you want to update that, you have to add the command above with" />
+
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Inside My Minds Journey">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker" rel="stylesheet">
+  
+  <script>
+    
+
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Zakatell Kanda</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">updating a configmap/secrets in kubernetes</h1>
+          <div class="row">
+            <div class="col-xs-6">
+              <time class="post-date" datetime="2018-03-06 02:45:18 UTC">
+                06, Mar, 2018
+              </time>
+            </div>
+            <div class="col-xs-6">
+              <div class="post-author">
+                <a target="_blank" href="https://blog.zkanda.io/">@Zakatell Kanda</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content markdown-body">
+          <p>At work, we started using Kubernetes for stateless application. We frequently change the values of configmap/secrets especially in staging environments, however, this is still not baked in to k8s.</p>
+
+<p>How to do it?</p>
+
+<p>You have to replaced a config to update it.</p>
+
+<p>For example, if you create a configmap like this:</p>
+
+<pre><code class="language-sh">kubectl create configmap site-config --from-file=nginx.conf
+</code></pre>
+
+<p>If you want to update that, you have to add the command above with</p>
+
+<ul>
+<li><code>--dry-run -o yaml | kubectl replace -f -</code></li>
+</ul>
+
+<p>So it would become like this:</p>
+
+<pre><code class="language-sh">kubectl create configmap site-config --from-file=nginx.conf \
+    --dry-run -o yaml | kubectl replace -f -
+</code></pre>
+
+<p>But we are not done yet, in order for those configs to be visible in the running containers that needs them, we have to do a new deployment.</p>
+
+<p>The easiest way to do that is just patch the container. Say our deployment service is called <code>nginx</code>.</p>
+
+<pre><code class="language-sh">kubectl patch deployment nginx -p &quot;{\&quot;spec\&quot;:{\&quot;template\&quot;:{\&quot;metadata\&quot;:{\&quot;annotations\&quot;:{\&quot;date\&quot;:\&quot;`date +'%s'`\&quot;}}}}}&quot;
+</code></pre>
+
+<p>This should issue a new deployment rollout and the changes in configmap is now propagated on the new containers.</p>
+
+<p>I hope this helps you on your journey to Kubernetes, it&rsquo;s a different way of thinking than previous ops but it&rsquo;s step forward from my opinion.</p>
+
+        </div>
+        
+        
+        
+        <div class="site-footer">
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  
+
+</body>
+
+</html>

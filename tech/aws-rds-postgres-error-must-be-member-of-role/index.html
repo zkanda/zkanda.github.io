@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.55.1" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Zakatell Kanda" />
+  <meta property="og:url" content="https://blog.zkanda.io/tech/aws-rds-postgres-error-must-be-member-of-role/" />
+  <link rel="canonical" href="https://blog.zkanda.io/tech/aws-rds-postgres-error-must-be-member-of-role/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.zkanda.io"
+      },
+      "articleSection" : "tech",
+      "name" : "aws rds postgres - error:  must be member of role",
+      "headline" : "aws rds postgres - error:  must be member of role",
+      "description" : "I recently had to add a user for postgres in AWS RDS but it\x26rsquo;s giving me this error:\nERROR: must be member of role \x26quot;test\x26quot;  So here\x26rsquo;s what I did:\nFirst create a user with CREATEDB capability:\nCREATE USER testuser WITH CREATEDB PASSWORD \x27testpassword\x27; \\q  Connect again with this new user and create the database:\nCREATE DATABASE testdb OWNER testuser;  That\x26rsquo;s it.",
+      "inLanguage" : "en-US",
+      "author" : "Zakatell Kanda",
+      "creator" : "Zakatell Kanda",
+      "publisher": "Zakatell Kanda",
+      "accountablePerson" : "Zakatell Kanda",
+      "copyrightHolder" : "Zakatell Kanda",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-03-31 02:16:40 \x2b0000 UTC",
+      "dateModified" : "2017-03-31 02:16:40 \x2b0000 UTC",
+      "url" : "https:\/\/blog.zkanda.io\/tech\/aws-rds-postgres-error-must-be-member-of-role\/",
+      "keywords" : [  ]
+  }
+</script>
+<title>aws rds postgres - error:  must be member of role - Inside My Minds Journey</title>
+  <meta property="og:title" content="aws rds postgres - error:  must be member of role - Inside My Minds Journey" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="I recently had to add a user for postgres in AWS RDS but it&rsquo;s giving me this error:
+ERROR: must be member of role &quot;test&quot;  So here&rsquo;s what I did:
+First create a user with CREATEDB capability:
+CREATE USER testuser WITH CREATEDB PASSWORD &#39;testpassword&#39;; \q  Connect again with this new user and create the database:
+CREATE DATABASE testdb OWNER testuser;  That&rsquo;s it." />
+
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Inside My Minds Journey">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker" rel="stylesheet">
+  
+  <script>
+    
+
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Zakatell Kanda</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">aws rds postgres - error:  must be member of role</h1>
+          <div class="row">
+            <div class="col-xs-6">
+              <time class="post-date" datetime="2017-03-31 02:16:40 UTC">
+                31, Mar, 2017
+              </time>
+            </div>
+            <div class="col-xs-6">
+              <div class="post-author">
+                <a target="_blank" href="https://blog.zkanda.io/">@Zakatell Kanda</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content markdown-body">
+          <p>I recently had to add a user for postgres in AWS RDS but it&rsquo;s giving me this error:</p>
+
+<pre><code class="language-sh">ERROR:  must be member of role &quot;test&quot;
+</code></pre>
+
+<p>So here&rsquo;s what I did:</p>
+
+<p>First create a user with CREATEDB capability:</p>
+
+<pre><code class="language-sql">CREATE USER testuser WITH CREATEDB PASSWORD 'testpassword';
+\q
+</code></pre>
+
+<p>Connect again with this new user and create the database:</p>
+
+<pre><code class="language-sql">CREATE DATABASE testdb OWNER testuser;
+</code></pre>
+
+<p>That&rsquo;s it.</p>
+
+        </div>
+        
+        
+        
+        <div class="site-footer">
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  
+
+</body>
+
+</html>

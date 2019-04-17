@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Singapore on Zakatell&#39;s Blog</title>
+    <title>singapore on Inside My Minds Journey</title>
     <link>https://blog.zkanda.io/tags/singapore/</link>
-    <description>Recent content in Singapore on Zakatell&#39;s Blog</description>
+    <description>Recent content in singapore on Inside My Minds Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 May 2017 05:20:35 +0000</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>gophercon sg 2017 reflection</title>
-      <link>https://blog.zkanda.io/post/gophercon-sg/</link>
+      <link>https://blog.zkanda.io/tech/gophercon-sg/</link>
       <pubDate>Sat, 27 May 2017 05:20:35 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/post/gophercon-sg/</guid>
+      <guid>https://blog.zkanda.io/tech/gophercon-sg/</guid>
       <description>This is first time attending a conference outside my country. It was pretty exciting and scary because I&amp;rsquo;m going alone but nonetheless it was an amazing experience.
 I met a couple of interesting people and mostly I think it boost more my confidence in travelling.
 The first day was all about learning Go for Intermediate developers by William Kennedy.

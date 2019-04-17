@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elasticsearch on Zakatell&#39;s Blog</title>
+    <title>elasticsearch on Inside My Minds Journey</title>
     <link>https://blog.zkanda.io/categories/elasticsearch/</link>
-    <description>Recent content in Elasticsearch on Zakatell&#39;s Blog</description>
+    <description>Recent content in elasticsearch on Inside My Minds Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Jul 2017 05:46:21 +0000</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>running elasticsearch on a 2gb digital ocean droplet</title>
-      <link>https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</link>
+      <link>https://blog.zkanda.io/tech/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</link>
       <pubDate>Mon, 03 Jul 2017 05:46:21 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
+      <guid>https://blog.zkanda.io/tech/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
       <description>So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
 Did some research and found this docs on increasing max_map_count:
 echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>

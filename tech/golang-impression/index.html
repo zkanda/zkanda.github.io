@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.55.1" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Zakatell Kanda" />
+  <meta property="og:url" content="https://blog.zkanda.io/tech/golang-impression/" />
+  <link rel="canonical" href="https://blog.zkanda.io/tech/golang-impression/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.zkanda.io"
+      },
+      "articleSection" : "tech",
+      "name" : "golang impression",
+      "headline" : "golang impression",
+      "description" : "I\x26rsquo;ve been very excited to use Go at work and somehow very refreshing, been meaning to learn it for some time but it\x26rsquo;s more easier for me to learn if I actually see it in action.\nSo far it\x26rsquo;s been very nice, though of course some stuff are not so easy. Here\x26rsquo;s one trivial matter.\n First using it with Python feel like I\x26rsquo;m lost when context switching. Our main application is written in Python\/Django and we are slowly trying to build microservices around it.",
+      "inLanguage" : "en-US",
+      "author" : "Zakatell Kanda",
+      "creator" : "Zakatell Kanda",
+      "publisher": "Zakatell Kanda",
+      "accountablePerson" : "Zakatell Kanda",
+      "copyrightHolder" : "Zakatell Kanda",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-05-20 21:21:11 \x2b0000 UTC",
+      "dateModified" : "2017-05-20 21:21:11 \x2b0000 UTC",
+      "url" : "https:\/\/blog.zkanda.io\/tech\/golang-impression\/",
+      "keywords" : [  ]
+  }
+</script>
+<title>golang impression - Inside My Minds Journey</title>
+  <meta property="og:title" content="golang impression - Inside My Minds Journey" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="I&rsquo;ve been very excited to use Go at work and somehow very refreshing, been meaning to learn it for some time but it&rsquo;s more easier for me to learn if I actually see it in action.
+So far it&rsquo;s been very nice, though of course some stuff are not so easy. Here&rsquo;s one trivial matter.
+ First using it with Python feel like I&rsquo;m lost when context switching. Our main application is written in Python/Django and we are slowly trying to build microservices around it." />
+
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Inside My Minds Journey">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker" rel="stylesheet">
+  
+  <script>
+    
+
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Zakatell Kanda</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">golang impression</h1>
+          <div class="row">
+            <div class="col-xs-6">
+              <time class="post-date" datetime="2017-05-20 21:21:11 UTC">
+                20, May, 2017
+              </time>
+            </div>
+            <div class="col-xs-6">
+              <div class="post-author">
+                <a target="_blank" href="https://blog.zkanda.io/">@Zakatell Kanda</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content markdown-body">
+          
+
+<p>I&rsquo;ve been very excited to use Go at work and somehow very refreshing, been meaning to learn it for some time but it&rsquo;s more easier for me to learn if I actually see it in action.</p>
+
+<p>So far it&rsquo;s been very nice, though of course some stuff are not so easy. Here&rsquo;s one trivial matter.</p>
+
+<ul>
+<li>First using it with Python feel like I&rsquo;m lost when context switching. Our main application is written in Python/Django and we are slowly trying to build microservices around it. They communicate via thrift.</li>
+</ul>
+
+<p>I had to test a package that make sure it truncates to a certain unicode character limit. This is when I appreciated Python for having duck typing. I can just build a long character like this:</p>
+
+<pre><code class="language-python">long_unicode_char = &quot;ひ&quot; * 100
+</code></pre>
+
+<p>For some reason, my brain us fixated on how easy it is to do in dynamic language that it blocks from trying to search for a way in Go. But then of course, after some complaining and brain rewire you can then move forward.</p>
+
+<p>So here&rsquo;s how you should it.</p>
+
+<pre><code class="language-go">s := strings.Repeat(&quot;ひ&quot;, 100)
+</code></pre>
+
+<p>Small things matters.</p>
+
+<h4 id="contributing">Contributing</h4>
+
+<ul>
+<li>Tried contributing to the ecosystem, so far I&rsquo;m interested on <a href="https://github.com/golang/dep">dep</a>, the new and hopefully will become the official package management. The people who manage it seems to be very nice. And for some interesting reason, it&rsquo;s one of the project that have active woman contributors, I&rsquo;m sure there&rsquo;s a lot, but it&rsquo;s kind of just refreshing thought.</li>
+</ul>
+
+<h4 id="dislike">Dislike</h4>
+
+<ul>
+<li>One inherit things that I don&rsquo;t like is how common it is to declare single character variable, you see this a lot in examples given in the official blog post. I see this mostly in c code but I guess I just have to get used to that.</li>
+</ul>
+
+        </div>
+        
+        
+        
+        <div class="site-footer">
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  
+
+</body>
+
+</html>

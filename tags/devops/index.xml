@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devops on Zakatell&#39;s Blog</title>
+    <title>devops on Inside My Minds Journey</title>
     <link>https://blog.zkanda.io/tags/devops/</link>
-    <description>Recent content in Devops on Zakatell&#39;s Blog</description>
+    <description>Recent content in devops on Inside My Minds Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Mar 2018 22:55:57 +0000</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>our experience in resizing an ebs volume in ec2 instances.</title>
-      <link>https://blog.zkanda.io/post/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
+      <link>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
       <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/post/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
+      <guid>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
       <description>Increasing disk space without downtime.
 So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
 For the first time we search on how to do this, there&amp;rsquo;s many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.</description>
@@ -24,10 +24,10 @@ For the first time we search on how to do this, there&amp;rsquo;s many article w
     
     <item>
       <title>disabling udp in memcached.</title>
-      <link>https://blog.zkanda.io/post/disabling-udp-in-memcached/</link>
+      <link>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</link>
       <pubDate>Wed, 07 Mar 2018 18:54:46 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/post/disabling-udp-in-memcached/</guid>
+      <guid>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</guid>
       <description>One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
 For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
 It turns out memcached by default listens to both TCP and UDP, since we don&amp;rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).</description>

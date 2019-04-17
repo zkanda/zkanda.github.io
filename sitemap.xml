@@ -3,119 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.zkanda.io/post/golang-dynamic-type-in-json-field/</loc>
+    <loc>https://blog.zkanda.io/</loc>
+    <lastmod>2018-11-07T04:19:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/</loc>
+    <lastmod>2018-11-07T04:19:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/golang-dynamic-type-in-json-field/</loc>
     <lastmod>2018-11-07T04:19:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/post/a-possible-list-to-add-when-writing-a-test/</loc>
+    <loc>https://blog.zkanda.io/tech/a-possible-list-to-add-when-writing-a-test/</loc>
     <lastmod>2018-11-03T05:29:43+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/post/installing-prometheus-in-k8s-cluster-with-helm/</loc>
+    <loc>https://blog.zkanda.io/tech/installing-prometheus-in-k8s-cluster-with-helm/</loc>
     <lastmod>2018-09-04T04:10:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/post/experience-in-resizing-an-ebs-volume-in-ec2-instances/</loc>
+    <loc>https://blog.zkanda.io/categories/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/disabling-udp-in-memcached/</loc>
-    <lastmod>2018-03-07T18:54:46+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/updating-a-configmap-secrets-in-kubernetes/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/give-more/</loc>
-    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/defer-inside-a-for-loop/</loc>
-    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</loc>
-    <lastmod>2017-07-03T05:46:21+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/gophercon-sg/</loc>
-    <lastmod>2017-05-27T05:20:35+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/golang-impression/</loc>
-    <lastmod>2017-05-20T21:21:11+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/aws-rds-postgres-error-must-be-member-of-role/</loc>
-    <lastmod>2017-03-31T02:16:40+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/installing-python-packages-directly-from-github-using-pip/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/setting-a-different-vimrc-and-runtime-for-vim/</loc>
-    <lastmod>2016-11-29T01:25:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/setting-vi-mode-on-ipython-5/</loc>
-    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/compiling-the-latest-beta-kernel-in-archlinux/</loc>
-    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/the-start-of-our-journey/</loc>
-    <lastmod>2016-05-27T10:43:38+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/about-me/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/categories/about-me/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/archlinux/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/archlinux/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/aws/</loc>
+    <loc>https://blog.zkanda.io/tags/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -127,55 +48,7 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tags/bootloader/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/bootloader/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/compile/</loc>
-    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/compile/</loc>
-    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/conference/</loc>
-    <lastmod>2017-05-27T05:20:35+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/configmap/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/configmap/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/devops/</loc>
+    <loc>https://blog.zkanda.io/tags/aws/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -187,91 +60,7 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tags/elasticsearch/</loc>
-    <lastmod>2017-07-03T05:46:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/elasticsearch/</loc>
-    <lastmod>2017-07-03T05:46:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/git/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/git/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/golang/</loc>
-    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/golang/</loc>
-    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/ipython/</loc>
-    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/ipython/</loc>
-    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/kernel/</loc>
-    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/kernel/</loc>
-    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/kubernetes/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/kubernetes/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/life/</loc>
-    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/life/</loc>
-    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/linux/</loc>
+    <loc>https://blog.zkanda.io/tags/devops/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -283,57 +72,14 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tags/pip/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/pip/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/post/</loc>
-    <lastmod>2018-11-07T04:19:05+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/python/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/python/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/secrets/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/categories/secrets/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/singapore/</loc>
-    <lastmod>2017-05-27T05:20:35+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/software/</loc>
+    <loc>https://blog.zkanda.io/tags/linux/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</loc>
+    <lastmod>2018-03-19T22:55:57+00:00</lastmod>
   </url>
   
   <url>
@@ -343,13 +89,7 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tags/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zkanda.io/tags/technology/</loc>
+    <loc>https://blog.zkanda.io/tags/software/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -361,7 +101,70 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tags/thoughts/</loc>
+    <loc>https://blog.zkanda.io/tags/technology/</loc>
+    <lastmod>2018-03-19T22:55:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</loc>
+    <lastmod>2018-03-07T18:54:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/configmap/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/configmap/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/kubernetes/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/kubernetes/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/secrets/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/secrets/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/give-more/</loc>
+    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/life/</loc>
+    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/life/</loc>
     <lastmod>2018-03-05T23:46:53+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -373,14 +176,104 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tags/vi-mode/</loc>
-    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+    <loc>https://blog.zkanda.io/tags/thoughts/</loc>
+    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/categories/vi-mode/</loc>
-    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+    <loc>https://blog.zkanda.io/categories/golang/</loc>
+    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/golang/</loc>
+    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/defer-inside-a-for-loop/</loc>
+    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/elasticsearch/</loc>
+    <lastmod>2017-07-03T05:46:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/elasticsearch/</loc>
+    <lastmod>2017-07-03T05:46:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</loc>
+    <lastmod>2017-07-03T05:46:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/conference/</loc>
+    <lastmod>2017-05-27T05:20:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/gophercon-sg/</loc>
+    <lastmod>2017-05-27T05:20:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/singapore/</loc>
+    <lastmod>2017-05-27T05:20:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/golang-impression/</loc>
+    <lastmod>2017-05-20T21:21:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/aws-rds-postgres-error-must-be-member-of-role/</loc>
+    <lastmod>2017-03-31T02:16:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/archlinux/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/archlinux/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/bootloader/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/bootloader/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/windows/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -391,19 +284,126 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/categories/windows/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
+    <loc>https://blog.zkanda.io/categories/git/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/</loc>
-    <lastmod>2018-11-07T04:19:05+00:00</lastmod>
+    <loc>https://blog.zkanda.io/tags/git/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/post/about/</loc>
+    <loc>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/pip/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/pip/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/python/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/python/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/setting-a-different-vimrc-and-runtime-for-vim/</loc>
+    <lastmod>2016-11-29T01:25:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/ipython/</loc>
+    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/ipython/</loc>
+    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/setting-vi-mode-on-ipython-5/</loc>
+    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/vi-mode/</loc>
+    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/vi-mode/</loc>
+    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/compile/</loc>
+    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/compile/</loc>
+    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/compiling-the-latest-beta-kernel-in-archlinux/</loc>
+    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/kernel/</loc>
+    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/kernel/</loc>
+    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tech/the-start-of-our-journey/</loc>
+    <lastmod>2016-05-27T10:43:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/categories/about-me/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/tags/about-me/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zkanda.io/about/</loc>
   </url>
   
 </urlset>

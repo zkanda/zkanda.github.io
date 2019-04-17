@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Zakatell&#39;s Blog</title>
+    <title>python on Inside My Minds Journey</title>
     <link>https://blog.zkanda.io/categories/python/</link>
-    <description>Recent content in Python on Zakatell&#39;s Blog</description>
+    <description>Recent content in python on Inside My Minds Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Dec 2016 04:17:08 +0000</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>installing python packages directly from github using pip</title>
-      <link>https://blog.zkanda.io/post/installing-python-packages-directly-from-github-using-pip/</link>
+      <link>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</link>
       <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/post/installing-python-packages-directly-from-github-using-pip/</guid>
+      <guid>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</guid>
       <description>Recently, I needed to install a package directly from Github which I&amp;rsquo;m trying to contribute into.
 For example you have this url: https://github.com/zkanda/lambda-uploader
 What you can do is just add git+ as prefix in the URL.
