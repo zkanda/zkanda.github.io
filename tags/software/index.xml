@@ -19,7 +19,7 @@
       <guid>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
       <description>Increasing disk space without downtime.
 So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
-For the first time we search on how to do this, there&amp;rsquo;s many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.</description>
+For the first time we search on how to do this, there are many articles written about it and most of them require to stop the system and detaching a volume. But there must be a real doc from aws itself, that is most likely up to date.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ For the first time we search on how to do this, there&amp;rsquo;s many article w
       <pubDate>Wed, 07 Mar 2018 18:54:46 +0000</pubDate>
       
       <guid>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</guid>
-      <description>One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
+      <description>One of our server provider which is running in Germany have a bot that scans for an open port, this is to prevent other humans/robot in abusing services that are open on the internet.
 For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
 It turns out memcached by default listens to both TCP and UDP, since we don&amp;rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).</description>
     </item>
@@ -41,7 +41,7 @@ It turns out memcached by default listens to both TCP and UDP, since we don&amp;
       <guid>https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/</guid>
       <description>At work, we started using Kubernetes for stateless application. We frequently change the values of configmap/secrets especially in staging environments, however, this is still not baked in to k8s.
 How to do it?
-You have to replaced a config to update it.
+You have to replace a config to update it.
 For example, if you create a configmap like this:
 kubectl create configmap site-config --from-file=nginx.conf  If you want to update that, you have to add the command above with</description>
     </item>

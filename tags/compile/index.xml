@@ -18,7 +18,7 @@
       
       <guid>https://blog.zkanda.io/tech/compiling-the-latest-beta-kernel-in-archlinux/</guid>
       <description>You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
- one missing feature was suspend, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
+ one missing feature was &amp;ldquo;suspend&amp;rdquo;, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
     </item>
     
   </channel>

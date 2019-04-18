@@ -19,7 +19,7 @@
       "articleSection" : "tech",
       "name" : "aws rds postgres - error:  must be member of role",
       "headline" : "aws rds postgres - error:  must be member of role",
-      "description" : "I recently had to add a user for postgres in AWS RDS but it\x26rsquo;s giving me this error:\nERROR: must be member of role \x26quot;test\x26quot;  So here\x26rsquo;s what I did:\nFirst create a user with CREATEDB capability:\nCREATE USER testuser WITH CREATEDB PASSWORD \x27testpassword\x27; \\q  Connect again with this new user and create the database:\nCREATE DATABASE testdb OWNER testuser;  That\x26rsquo;s it.",
+      "description" : "I recently had to add a user for postgres in AWS RDS but it\x26rsquo;s giving me this error:\nERROR: must be member of role \x26quot;test\x26quot;  So here\x26rsquo;s what I did:\nFirst, create a user with CREATEDB capability:\nCREATE USER testuser WITH CREATEDB PASSWORD \x27testpassword\x27; \\q  Connect again with this new user and create the database:\nCREATE DATABASE testdb OWNER testuser;  That\x26rsquo;s it.",
       "inLanguage" : "en-US",
       "author" : "Zakatell Kanda",
       "creator" : "Zakatell Kanda",
@@ -38,7 +38,7 @@
   <meta property="og:type" content="article" />
   <meta name="description" content="I recently had to add a user for postgres in AWS RDS but it&rsquo;s giving me this error:
 ERROR: must be member of role &quot;test&quot;  So here&rsquo;s what I did:
-First create a user with CREATEDB capability:
+First, create a user with CREATEDB capability:
 CREATE USER testuser WITH CREATEDB PASSWORD &#39;testpassword&#39;; \q  Connect again with this new user and create the database:
 CREATE DATABASE testdb OWNER testuser;  That&rsquo;s it." />
 
@@ -112,7 +112,7 @@ CREATE DATABASE testdb OWNER testuser;  That&rsquo;s it." />
 
 <p>So here&rsquo;s what I did:</p>
 
-<p>First create a user with CREATEDB capability:</p>
+<p>First, create a user with CREATEDB capability:</p>
 
 <pre><code class="language-sql">CREATE USER testuser WITH CREATEDB PASSWORD 'testpassword';
 \q

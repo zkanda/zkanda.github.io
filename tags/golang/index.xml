@@ -18,7 +18,7 @@
       
       <guid>https://blog.zkanda.io/tech/defer-inside-a-for-loop/</guid>
       <description>So I have an infinite for loop however I want to use defer to make my intention clearer.
-Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This in turn would give you memory leak.
+Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
 for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
     </item>
@@ -29,8 +29,8 @@ for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world 
       <pubDate>Sat, 27 May 2017 05:20:35 +0000</pubDate>
       
       <guid>https://blog.zkanda.io/tech/gophercon-sg/</guid>
-      <description>This is first time attending a conference outside my country. It was pretty exciting and scary because I&amp;rsquo;m going alone but nonetheless it was an amazing experience.
-I met a couple of interesting people and mostly I think it boost more my confidence in travelling.
+      <description>This is the first time attending a conference outside my country. It was pretty exciting and scary because I&amp;rsquo;m going alone but nonetheless it was an amazing experience.
+I met a couple of interesting people and mostly I think it boosts more my confidence in traveling.
 The first day was all about learning Go for Intermediate developers by William Kennedy.
 I learned quite a lot, although I&amp;rsquo;ve been using Go in work for some time now, I admit that I still have a long way to go.</description>
     </item>

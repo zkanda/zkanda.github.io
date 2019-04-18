@@ -19,7 +19,7 @@
       <guid>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
       <description>Increasing disk space without downtime.
 So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
-For the first time we search on how to do this, there&amp;rsquo;s many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.</description>
+For the first time we search on how to do this, there are many articles written about it and most of them require to stop the system and detaching a volume. But there must be a real doc from aws itself, that is most likely up to date.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ For the first time we search on how to do this, there&amp;rsquo;s many article w
       <pubDate>Wed, 07 Mar 2018 18:54:46 +0000</pubDate>
       
       <guid>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</guid>
-      <description>One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
+      <description>One of our server provider which is running in Germany have a bot that scans for an open port, this is to prevent other humans/robot in abusing services that are open on the internet.
 For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
 It turns out memcached by default listens to both TCP and UDP, since we don&amp;rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).</description>
     </item>
@@ -41,7 +41,7 @@ It turns out memcached by default listens to both TCP and UDP, since we don&amp;
       <guid>https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/</guid>
       <description>At work, we started using Kubernetes for stateless application. We frequently change the values of configmap/secrets especially in staging environments, however, this is still not baked in to k8s.
 How to do it?
-You have to replaced a config to update it.
+You have to replace a config to update it.
 For example, if you create a configmap like this:
 kubectl create configmap site-config --from-file=nginx.conf  If you want to update that, you have to add the command above with</description>
     </item>
@@ -53,7 +53,7 @@ kubectl create configmap site-config --from-file=nginx.conf  If you want to upda
       
       <guid>https://blog.zkanda.io/tech/defer-inside-a-for-loop/</guid>
       <description>So I have an infinite for loop however I want to use defer to make my intention clearer.
-Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This in turn would give you memory leak.
+Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
 for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
     </item>
@@ -66,7 +66,7 @@ for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world 
       <guid>https://blog.zkanda.io/tech/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
       <description>So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
 Did some research and found this docs on increasing max_map_count:
-echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>
+echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persists, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>
     </item>
     
     <item>
@@ -76,10 +76,10 @@ echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf 
       
       <guid>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</guid>
       <description>Recently, I needed to install a package directly from Github which I&amp;rsquo;m trying to contribute into.
-For example you have this url: https://github.com/zkanda/lambda-uploader
-What you can do is just add git+ as prefix in the URL.
+For example, you have this url: https://github.com/zkanda/lambda-uploader
+What you can do is just add git+ as a prefix in the URL.
 Here&amp;rsquo;s how you can do it!
-pip install git+https://github.com/zkanda/lambda-uploader  But the code that I want to install is from another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
+pip install git+https://github.com/zkanda/lambda-uploader  But I want to install a code in another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@ pip install git+https://github.com/zkanda/lambda-uploader  But the code that I w
       <pubDate>Wed, 13 Jul 2016 21:59:28 +0000</pubDate>
       
       <guid>https://blog.zkanda.io/tech/setting-vi-mode-on-ipython-5/</guid>
-      <description>When I upgraded my IPython version to 5 and one thing that I&amp;rsquo;m missing is vi mode binding. When I read the changelog, they now replace readline with prompt_toolkit a pure python interactive command line prompt. This is very nice because it supports all platform that python supports.
+      <description>When I upgraded my IPython version to 5 and one thing that I&amp;rsquo;m missing is vi mode binding. When I read the changelog, they now replace readline with prompt_toolkit a pure python interactive command line prompt. This is very nice because it supports all platform that Python supports.
 So to bring back your vi binding, you need to do some few changes.
 ipython profile create  This will create a default profile where you can change your IPython configuration.</description>
     </item>
@@ -100,7 +100,7 @@ ipython profile create  This will create a default profile where you can change 
       
       <guid>https://blog.zkanda.io/tech/compiling-the-latest-beta-kernel-in-archlinux/</guid>
       <description>You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
- one missing feature was suspend, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
+ one missing feature was &amp;ldquo;suspend&amp;rdquo;, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
     </item>
     
   </channel>

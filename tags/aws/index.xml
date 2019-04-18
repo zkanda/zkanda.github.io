@@ -19,7 +19,7 @@
       <guid>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
       <description>Increasing disk space without downtime.
 So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
-For the first time we search on how to do this, there&amp;rsquo;s many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.</description>
+For the first time we search on how to do this, there are many articles written about it and most of them require to stop the system and detaching a volume. But there must be a real doc from aws itself, that is most likely up to date.</description>
     </item>
     
   </channel>

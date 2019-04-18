@@ -19,7 +19,7 @@
       "articleSection" : "tech",
       "name" : "golang: defer inside a for loop",
       "headline" : "golang: defer inside a for loop",
-      "description" : "So I have an infinite for loop however I want to use defer to make my intention clearer.\nProblem is this defer would never run because my function wouldn\x26rsquo;t return. This in turn would give you memory leak.\nAs neat as it could be, you can use a closure\/anonymous function for this.\nfor x := 0; x \x26lt; 2; x\x2b\x2b { func() { defer fmt.Println(x) }() }  Real world use case: So what I\x26rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).",
+      "description" : "So I have an infinite for loop however I want to use defer to make my intention clearer.\nProblem is this defer would never run because my function wouldn\x26rsquo;t return. This, in turn, would give you memory leak.\nAs neat as it could be, you can use a closure\/anonymous function for this.\nfor x := 0; x \x26lt; 2; x\x2b\x2b { func() { defer fmt.Println(x) }() }  Real world use case: So what I\x26rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).",
       "inLanguage" : "en-US",
       "author" : "Zakatell Kanda",
       "creator" : "Zakatell Kanda",
@@ -37,7 +37,7 @@
   <meta property="og:title" content="golang: defer inside a for loop - Inside My Minds Journey" />
   <meta property="og:type" content="article" />
   <meta name="description" content="So I have an infinite for loop however I want to use defer to make my intention clearer.
-Problem is this defer would never run because my function wouldn&rsquo;t return. This in turn would give you memory leak.
+Problem is this defer would never run because my function wouldn&rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
 for x := 0; x &lt; 2; x&#43;&#43; { func() { defer fmt.Println(x) }() }  Real world use case: So what I&rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen)." />
 
@@ -108,7 +108,7 @@ for x := 0; x &lt; 2; x&#43;&#43; { func() { defer fmt.Println(x) }() }  Real wo
 
 <p>So I have an infinite <code>for loop</code> however I want to use <code>defer</code> to make my intention clearer.</p>
 
-<p>Problem is this <code>defer</code> would never run because my function wouldn&rsquo;t return. This in turn would give you memory leak.</p>
+<p>Problem is this <code>defer</code> would never run because my function wouldn&rsquo;t return. This, in turn, would give you memory leak.</p>
 
 <p>As neat as it could be, you can use a closure/anonymous function for this.</p>
 

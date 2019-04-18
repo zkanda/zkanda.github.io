@@ -19,7 +19,7 @@
       "articleSection" : "tech",
       "name" : "golang: dynamic type in a json field",
       "headline" : "golang: dynamic type in a json field",
-      "description" : "We had experience where the type of a field changes base on certain conditions. We think this is really bad but we have to support it somehow. Here\x26rsquo;s how.\nYou\x26rsquo;ll have to specify the field type as interface.\ntype P struct { T interface{} `json:\x26quot;t\x26quot;` }  After that you\x26rsquo;ll need to use switch to determine the type. In our case, we needed it as int.\nvar i int var p P s := `{\x26quot;t\x26quot;: \x26quot;3460\x26quot;}` \/\/ should also work with \/\/ s := `{\x26quot;t\x26quot;: 3460}` if err := json.",
+      "description" : "We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here\x26rsquo;s how.\nYou\x26rsquo;ll have to specify the field type as an interface.\ntype P struct { T interface{} `json:\x26quot;t\x26quot;` }  After that, you\x26rsquo;ll need to use switch to determine the type. In our case, we needed it as int.\nvar i int var p P s := `{\x26quot;t\x26quot;: \x26quot;3460\x26quot;}` \/\/ should also work with \/\/ s := `{\x26quot;t\x26quot;: 3460}` if err := json.",
       "inLanguage" : "en-US",
       "author" : "Zakatell Kanda",
       "creator" : "Zakatell Kanda",
@@ -36,9 +36,9 @@
 <title>golang: dynamic type in a json field - Inside My Minds Journey</title>
   <meta property="og:title" content="golang: dynamic type in a json field - Inside My Minds Journey" />
   <meta property="og:type" content="article" />
-  <meta name="description" content="We had experience where the type of a field changes base on certain conditions. We think this is really bad but we have to support it somehow. Here&rsquo;s how.
-You&rsquo;ll have to specify the field type as interface.
-type P struct { T interface{} `json:&quot;t&quot;` }  After that you&rsquo;ll need to use switch to determine the type. In our case, we needed it as int.
+  <meta name="description" content="We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here&rsquo;s how.
+You&rsquo;ll have to specify the field type as an interface.
+type P struct { T interface{} `json:&quot;t&quot;` }  After that, you&rsquo;ll need to use switch to determine the type. In our case, we needed it as int.
 var i int var p P s := `{&quot;t&quot;: &quot;3460&quot;}` // should also work with // s := `{&quot;t&quot;: 3460}` if err := json." />
 
   
@@ -104,16 +104,16 @@ var i int var p P s := `{&quot;t&quot;: &quot;3460&quot;}` // should also work w
         </header>
 
         <div class="post-content markdown-body">
-          <p>We had experience where the type of a field changes base on certain conditions. We think this is really bad but we have to support it somehow. Here&rsquo;s how.</p>
+          <p>We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here&rsquo;s how.</p>
 
-<p>You&rsquo;ll have to specify the field type as interface.</p>
+<p>You&rsquo;ll have to specify the field type as an interface.</p>
 
 <pre><code class="language-go">type P struct {
-	T interface{} `json:&quot;t&quot;`
+    T interface{} `json:&quot;t&quot;`
 }
 </code></pre>
 
-<p>After that you&rsquo;ll need to use switch to determine the type. In our case, we needed it as int.</p>
+<p>After that, you&rsquo;ll need to use <code>switch</code> to determine the type. In our case, we needed it as int.</p>
 
 <pre><code class="language-go">var i int
 
@@ -123,19 +123,19 @@ s := `{&quot;t&quot;: &quot;3460&quot;}`
 // should also work with
 // s := `{&quot;t&quot;: 3460}`
 if err := json.NewDecoder(r.Body).Decode(strings.NewReader(s)); err != nil {
-	fmt.Errorln(err)
+    fmt.Errorln(err)
 }
 
 switch t := p.(type) {
 case float64:
-	i := int(t)
+    i := int(t)
 case string:
-	var err error
-	if i, err = strconv.Atoi(t); err != nil {
-		return nil, fmt.Errorf(&quot;t is not a number: %#v&quot;, err)
+    var err error
+    if i, err = strconv.Atoi(t); err != nil {
+        return nil, fmt.Errorf(&quot;t is not a number: %#v&quot;, err)
     }
 default:
-	fmt.Errorf(&quot;t is of invalid type: %#v&quot;, t)
+    fmt.Errorf(&quot;t is of invalid type: %#v&quot;, t)
 }
 </code></pre>
 

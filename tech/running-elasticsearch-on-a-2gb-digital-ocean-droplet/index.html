@@ -19,7 +19,7 @@
       "articleSection" : "tech",
       "name" : "running elasticsearch on a 2gb digital ocean droplet",
       "headline" : "running elasticsearch on a 2gb digital ocean droplet",
-      "description" : "So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.\nDid some research and found this docs on increasing max_map_count:\necho \x26quot;vm.max_map_count=262144\x26quot; | sudo tee -a \/etc\/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don\x26rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.",
+      "description" : "So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.\nDid some research and found this docs on increasing max_map_count:\necho \x26quot;vm.max_map_count=262144\x26quot; | sudo tee -a \/etc\/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persists, turns out memory still actually still not enough. I want don\x26rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.",
       "inLanguage" : "en-US",
       "author" : "Zakatell Kanda",
       "creator" : "Zakatell Kanda",
@@ -38,7 +38,7 @@
   <meta property="og:type" content="article" />
   <meta name="description" content="So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
 Did some research and found this docs on increasing max_map_count:
-echo &quot;vm.max_map_count=262144&quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persist, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production." />
+echo &quot;vm.max_map_count=262144&quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persists, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production." />
 
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48807928-3"></script>
@@ -111,7 +111,7 @@ echo &quot;vm.max_map_count=262144&quot; | sudo tee -a /etc/sysctl.conf sudo sys
 sudo sysctl -w vm.max_map_count=262144
 </code></pre>
 
-<p>But the problem still persist, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</p>
+<p>But the problem still persists, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</p>
 
 <p>Swap memory to the rescue.</p>
 
