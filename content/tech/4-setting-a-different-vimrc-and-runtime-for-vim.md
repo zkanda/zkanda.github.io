@@ -8,7 +8,7 @@ title = "setting a different vimrc and runtime for vim"
 
 +++
 
-Today, I decided to update my script and search for a way to easily change how I can load `vimrc` and `.vim/` directory. And vim provides a very convenient way to do it using environment variable.
+Today, I decided to update my script and search for a way to easily change how I can load `vimrc` and `.vim/` directory. And vim provides a very convenient way to do it using the environment variable.
 
 * `VIMINIT` - for switching vimrc.
 * `VIMRUNTIME` - for the .vim directory.

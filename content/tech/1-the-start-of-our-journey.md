@@ -11,6 +11,6 @@ title = "the start of our journey...."
 ## Bonjour !
 
 > Everything is a mysterious journey, each with its unique flavor and texture. 
-Here will be the diary, the voice on in which have the influence of something we *yet* fully understand.
+Here will be the diary, the voice on in which has the influence of something we *yet* fully understand.
 
 The Realm of Space!

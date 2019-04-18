@@ -14,7 +14,7 @@ At work, we started using Kubernetes for stateless application. We frequently ch
 
 How to do it?
 
-You have to replaced a config to update it.
+You have to replace a config to update it.
 
 For example, if you create a configmap like this:
 
@@ -33,14 +33,14 @@ kubectl create configmap site-config --from-file=nginx.conf \
     --dry-run -o yaml | kubectl replace -f -
 ```
 
-But we are not done yet, in order for those configs to be visible in the running containers that needs them, we have to do a new deployment.
+But we are not done yet, in order for those configs to be visible in the running containers that need them, we have to do a new deployment.
 
-The easiest way to do that is just patch the container. Say our deployment service is called `nginx`.
+The easiest way to do that is to patch the container. Say our deployment service is called `nginx`.
 
 ```sh
 kubectl patch deployment nginx -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
 ```
 
-This should issue a new deployment rollout and the changes in configmap is now propagated on the new containers.
+This should issue a new deployment rollout and the changes in configmap are now propagated on the new containers.
 
-I hope this helps you on your journey to Kubernetes, it's a different way of thinking than previous ops but it's step forward from my opinion.
+I hope this helps you on your journey to Kubernetes, it's a different way of thinking than previous ops but its a step forward in my opinion.

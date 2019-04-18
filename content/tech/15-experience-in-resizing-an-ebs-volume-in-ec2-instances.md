@@ -14,11 +14,11 @@ Increasing disk space without downtime.
 
 So in our team, we had to resize an instance disk because it's getting full, this is our experience.
 
-For the first time we search on how to do this, there's many article written about it and most of them requires to stop the system and detaching a volume. But there must be a real docs from aws itself, that is most likely up to date.
+For the first time we search on how to do this, there are many articles written about it and most of them require to stop the system and detaching a volume. But there must be a real doc from aws itself, that is most likely up to date.
 
 After more searching, we found this link: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-modify-volume.html
 
-From there, it seems like we can modify it on the fly since our instance is current generation, so that's good news.
+From there, it seems like we can modify it on the fly since our instance is the current generation, so that's good news.
 
 Since we mount the whole volume, we didn't need to extend a partition table. You only have to use the `resize` command.
 
@@ -42,4 +42,4 @@ old_desc_blocks = 4, new_desc_blocks = 10
 The filesystem on /dev/xvdb is now 39321600 (4k) blocks long.
 ```
 
-This was very nice and smooth experience and we are glad for this functionality, thank you AWS team and whoever made this possible.
+This was a very nice and smooth experience and we are glad for this functionality, thank you AWS team and whoever made this possible.

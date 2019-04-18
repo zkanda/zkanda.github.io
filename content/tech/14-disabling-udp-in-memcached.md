@@ -10,7 +10,7 @@ title = "disabling udp in memcached."
 
 +++
 
-One of our server provider which is running in Germany have a bot that scan for open port, this is to prevent other human/robot in abusing services that are open in the internet.
+One of our server provider which is running in Germany have a bot that scans for an open port, this is to prevent other humans/robot in abusing services that are open on the internet.
 
 For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
 

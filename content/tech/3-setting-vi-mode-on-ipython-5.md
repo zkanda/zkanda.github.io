@@ -10,7 +10,7 @@ title = "setting vi mode on ipython"
 
 +++
 
-When I upgraded my `IPython` version to 5 and one thing that I'm missing is `vi` mode binding. When I read the changelog, they now replace `readline` with `prompt_toolkit` a pure python interactive command line prompt. This is very nice because it supports all platform that python supports.
+When I upgraded my `IPython` version to 5 and one thing that I'm missing is `vi` mode binding. When I read the changelog, they now replace `readline` with `prompt_toolkit` a pure python interactive command line prompt. This is very nice because it supports all platform that Python supports.
 
 So to bring back your vi binding, you need to do some few changes.
 

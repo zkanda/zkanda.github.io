@@ -16,7 +16,7 @@ ERROR:  must be member of role "test"
 
 So here's what I did:
 
-First create a user with CREATEDB capability:
+First, create a user with CREATEDB capability:
 
 ```sql
 CREATE USER testuser WITH CREATEDB PASSWORD 'testpassword';

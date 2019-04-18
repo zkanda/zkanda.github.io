@@ -14,13 +14,13 @@ title = "about me"
 
 Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my site.
 
-If you stumbled here then you probably found my post intriguing or wanna know me a little. Here's some small details:
+If you stumbled here then you probably found my post intriguing or wanna know me a little. Here are some small details:
 
 * A software developer currently working for [engageSPARK](https://www.engagespark.com). It's an amazing company with awesome people, come [join us](https://www.engagespark.com/careers).
 * Photography as a hobby.
-* Reading books, from novel's to self help.
+* Reading books, from novels to self-help.
 
-If your still reading then I'm more interested in you, hit me up an email: hi at zkanda.io, let's get some coffee or any online sharing of thoughts.
+If you're still reading then I'm more interested in you, hit me up an email: hi at zkanda.io, let's get some coffee maybe?
 
 Cheers!
 

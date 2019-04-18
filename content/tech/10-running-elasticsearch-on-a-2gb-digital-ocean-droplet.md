@@ -19,7 +19,7 @@ echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -w vm.max_map_count=262144
 ```
 
-But the problem still persist, turns out memory still actually still not enough. I want don't to upgrade the memory since I just want to test things out and I have no plan on running it on production.
+But the problem still persists, turns out memory still actually still not enough. I want don't to upgrade the memory since I just want to test things out and I have no plan on running it on production.
 
 Swap memory to the rescue.
 

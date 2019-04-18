@@ -12,7 +12,7 @@ title = "golang: defer inside a for loop"
 
 So I have an infinite `for loop` however I want to use `defer` to make my intention clearer.
 
-Problem is this `defer` would never run because my function wouldn't return. This in turn would give you memory leak.
+Problem is this `defer` would never run because my function wouldn't return. This, in turn, would give you memory leak.
 
 As neat as it could be, you can use a closure/anonymous function for this.
 

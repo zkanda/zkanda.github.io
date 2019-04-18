@@ -8,12 +8,12 @@ title = "a simple list to thing about when writing a test."
 
 +++
 
-When writing test, the documentation that the API your integrating into only list all the good values that they intend to deliver to you or the other way around.
+When writing test, the documentation that the API you are integrating will only list all the good values that they intend to deliver to you or the other way around.
 
 What I observed from working with my colleague Harmen is this:
 
 - A negative test
-- A positive test for happy path
+- A positive test for the happy path
 - An empty input
 - A malformed data
 
