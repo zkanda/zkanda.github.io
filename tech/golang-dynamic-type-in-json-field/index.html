@@ -19,7 +19,7 @@
       "articleSection" : "tech",
       "name" : "golang: dynamic type in a json field",
       "headline" : "golang: dynamic type in a json field",
-      "description" : "We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here\x26rsquo;s how.\nYou\x26rsquo;ll have to specify the field type as an interface.\ntype P struct { T interface{} `json:\x26quot;t\x26quot;` }  After that, you\x26rsquo;ll need to use switch to determine the type. In our case, we needed it as int.\nvar i int var p P s := `{\x26quot;t\x26quot;: \x26quot;3460\x26quot;}` \/\/ should also work with \/\/ s := `{\x26quot;t\x26quot;: 3460}` if err := json.",
+      "description" : "We had an experience where the type of a field change base on certain conditions. We think this is bad, but we have to support it. Here\x26rsquo;s how.\nYou\x26rsquo;ll have to specify the field type as an interface.\ntype P struct { T interface{} `json:\x26quot;t\x26quot;` }  After that, you\x26rsquo;ll need to use switch to determine the type. In our case, we needed it as int.\nvar i int var p P s := `{\x26quot;t\x26quot;: \x26quot;3460\x26quot;}` \/\/ should also work with \/\/ s := `{\x26quot;t\x26quot;: 3460}` if err := json.",
       "inLanguage" : "en-US",
       "author" : "Zakatell Kanda",
       "creator" : "Zakatell Kanda",
@@ -36,7 +36,7 @@
 <title>golang: dynamic type in a json field - Inside My Minds Journey</title>
   <meta property="og:title" content="golang: dynamic type in a json field - Inside My Minds Journey" />
   <meta property="og:type" content="article" />
-  <meta name="description" content="We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here&rsquo;s how.
+  <meta name="description" content="We had an experience where the type of a field change base on certain conditions. We think this is bad, but we have to support it. Here&rsquo;s how.
 You&rsquo;ll have to specify the field type as an interface.
 type P struct { T interface{} `json:&quot;t&quot;` }  After that, you&rsquo;ll need to use switch to determine the type. In our case, we needed it as int.
 var i int var p P s := `{&quot;t&quot;: &quot;3460&quot;}` // should also work with // s := `{&quot;t&quot;: 3460}` if err := json." />
@@ -105,7 +105,7 @@ var i int var p P s := `{&quot;t&quot;: &quot;3460&quot;}` // should also work w
         </header>
 
         <div class="post-content markdown-body">
-          <p>We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here&rsquo;s how.</p>
+          <p>We had an experience where the type of a field change base on certain conditions. We think this is bad, but we have to support it. Here&rsquo;s how.</p>
 
 <p>You&rsquo;ll have to specify the field type as an interface.</p>
 
@@ -145,7 +145,6 @@ default:
         </div>
         
         
-        
         <div class="site-footer">
   
 </div>
@@ -153,7 +152,6 @@ default:
       </div>
     </div>
   </article>
-
   <script src="/js/highlight.pack.js"></script>
 <script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
 
@@ -168,7 +166,5 @@ default:
 </script>
 
   
-
 </body>
-
 </html>
