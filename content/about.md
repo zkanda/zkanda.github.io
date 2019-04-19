@@ -2,19 +2,17 @@
 author = "Zakatell Kanda"
 categories = ["about me"]
 date = 0001-01-01T00:00:00Z
-description = ""
+description = "About Me"
 draft = false
 slug = "about"
 tags = ["about me"]
 title = "about me"
 +++
 
-> A bigger pleasure than reading a book is re-reading it.
-
 > The ability to observe without evaluating is the highest form of intelligence.
 > Jiddu Krishnamurti - Indian Philosopher
 
-The last quote is fascinating because it feels like a recursion.
+This quote is fascinating because it feels like a recursion.
 
 Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
 
