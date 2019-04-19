@@ -8,7 +8,7 @@ title = "golang: dynamic type in a json field"
 
 +++
 
-We had an experience where the type of a field change base on certain conditions. We think this is really bad but we have to support it somehow. Here's how.
+We had an experience where the type of a field change base on certain conditions. We think this is bad, but we have to support it. Here's how.
 
 You'll have to specify the field type as an interface.
 
