@@ -24,7 +24,7 @@ var i int var p P s := `{&amp;quot;t&amp;quot;: &amp;quot;3460&amp;quot;}` // sh
     </item>
     
     <item>
-      <title>a simple list to thing about when writing a test.</title>
+      <title>a possible list to think about when writing a test.</title>
       <link>https://blog.zkanda.io/tech/a-possible-list-to-add-when-writing-a-test/</link>
       <pubDate>Sat, 03 Nov 2018 05:29:43 +0000</pubDate>
       

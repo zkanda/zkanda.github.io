@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home on Inside My Minds Journey</title>
+    <link>https://blog.zkanda.io/tags/home/</link>
+    <description>Recent content in home on Inside My Minds Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://blog.zkanda.io/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>about me</title>
+      <link>https://blog.zkanda.io/</link>
+      <pubDate>Wed, 07 Nov 2018 04:19:05 +0000</pubDate>
+      
+      <guid>https://blog.zkanda.io/</guid>
+      <description>Hey there! I hope you&amp;rsquo;re having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
+ The ability to observe without evaluating is the highest form of intelligence.
+- Jiddu Krishnamurti - Indian Philosopher
+ This quote is fascinating because it feels like a recursion.
+If you stumbled here, then you probably found my post intriguing or wanna know me a little.</description>
+    </item>
+    
+  </channel>
+</rss>

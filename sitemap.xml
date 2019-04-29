@@ -3,15 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.zkanda.io/</loc>
+    <loc>https://blog.zkanda.io/tech/</loc>
     <lastmod>2018-11-07T04:19:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/tech/</loc>
+    <loc>https://blog.zkanda.io/</loc>
     <lastmod>2018-11-07T04:19:05+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -393,17 +392,13 @@
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/categories/about-me/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.zkanda.io/tags/about-me/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.zkanda.io/about/</loc>
+    <loc>https://blog.zkanda.io/tags/home/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
