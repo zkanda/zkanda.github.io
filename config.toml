@@ -1,7 +1,7 @@
 baseURL = "https://blog.zkanda.io"
 languageCode = "en-us"
 title = "Inside My Minds Journey"
-theme = "yinyang"
+theme = "min"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 

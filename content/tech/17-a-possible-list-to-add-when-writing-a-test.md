@@ -4,7 +4,7 @@ date = 2018-11-03T05:29:43Z
 description = ""
 draft = false
 slug = "a-possible-list-to-add-when-writing-a-test"
-title = "a simple list to thing about when writing a test."
+title = "a possible list to think about when writing a test."
 
 +++
 

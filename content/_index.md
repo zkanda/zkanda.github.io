@@ -1,20 +1,20 @@
 +++
 author = "Zakatell Kanda"
-categories = ["about me"]
 date = 0001-01-01T00:00:00Z
 description = "About Me"
 draft = false
 slug = "about"
-tags = ["about me"]
+tags = ["home", "about me"]
 title = "about me"
 +++
 
+Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
+
 > The ability to observe without evaluating is the highest form of intelligence.
-> Jiddu Krishnamurti - Indian Philosopher
+> 
+> \- Jiddu Krishnamurti - Indian Philosopher
 
 This quote is fascinating because it feels like a recursion.
-
-Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
 
 If you stumbled here, then you probably found my post intriguing or wanna know me a little. Here are some small details:
 
@@ -26,6 +26,4 @@ If you're still reading then I'm more interested in you, hit me up an email: hi 
 
 Cheers!
 
-Credits:
-
-The layout is mostly coming from [yinyang theme](https://github.com/joway/hugo-theme-yinyang) with a few modifications. Thank you for creating that beautiful minimal theme.
+The style of this site is copied from [yinyang theme](https://github.com/joway/hugo-theme-yinyang) with a few modifications optimized for english content. Thank you.
