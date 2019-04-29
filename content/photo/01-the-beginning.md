@@ -1,7 +1,7 @@
 ---
 title: "Why Photography"
 date: 2019-04-27T23:24:39+08:00
-draft: true
+draft: false
 ---
 
 What does it take to be inspired? To feel connected with what you're doing?
