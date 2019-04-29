@@ -6,10 +6,21 @@
     <description>Recent content in about me on Inside My Minds Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Nov 2018 04:19:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2019 23:24:39 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.zkanda.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why Photography</title>
+      <link>https://blog.zkanda.io/photo/01-the-beginning/</link>
+      <pubDate>Sat, 27 Apr 2019 23:24:39 +0800</pubDate>
+      
+      <guid>https://blog.zkanda.io/photo/01-the-beginning/</guid>
+      <description>What does it take to be inspired? To feel connected with what you&amp;rsquo;re doing?
+This is what photography is for me, or maybe more than that.
+There was a time where I worked a lot, not smartly but hardly. It was a moment happiness, a state of flow. But at some point, I felt like this was the only thing that&amp;rsquo;s happening in my life, it was fun, but I couldn&amp;rsquo;t get out the feeling of uneasiness, an intuition of doing something.</description>
+    </item>
     
     <item>
       <title>golang: dynamic type in a json field</title>
