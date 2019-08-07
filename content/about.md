@@ -4,7 +4,7 @@ date: 2019-08-07T23:52:03+07:00
 draft: false
 ---
 
-ey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
+Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
 
 > The ability to observe without evaluating is the highest form of intelligence.
 > 
