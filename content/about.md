@@ -7,7 +7,7 @@ draft: false
 Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
 
 > The ability to observe without evaluating is the highest form of intelligence.
-> 
+>
 > \- Jiddu Krishnamurti
 
 This quote is fascinating because it feels like a recursion.
