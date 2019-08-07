@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="A new Hugo site.">
+<title>
+running elasticsearch on a 2gb digital ocean droplet - Call me Zak
+</title>
+
+
+
+
+<link rel="shortcut icon" href="/sam.ico">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/" integrity="" crossorigin="anonymous" media="screen">
+
+
+
+ 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.zkanda.io/tn.png"/>
+
+<meta name="twitter:title" content="running elasticsearch on a 2gb digital ocean droplet"/>
+<meta name="twitter:description" content="So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
+Did some research and found this docs on increasing max_map_count:
+echo &#34;vm.max_map_count=262144&#34; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144 But the problem still persists, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production."/>
+
+<meta property="og:title" content="running elasticsearch on a 2gb digital ocean droplet" />
+<meta property="og:description" content="So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
+Did some research and found this docs on increasing max_map_count:
+echo &#34;vm.max_map_count=262144&#34; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144 But the problem still persists, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.zkanda.io/dev/running-elasticsearch-on-a-2gb-digital-ocean-droplet/" />
+
+<meta property="og:image" content="https://blog.zkanda.io/tn.png" />
+<meta property="article:published_time" content="2017-07-03T05:46:21+00:00" />
+<meta property="article:modified_time" content="2017-07-03T05:46:21+00:00" /><meta property="og:site_name" content="Call me Sam" />
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        running elasticsearch on a 2gb digital ocean droplet
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">running elasticsearch on a 2gb digital ocean droplet</div>
+
+        <div class="section" id="content"><p>So I want to run <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> on a very limited memory machine and I keep running on this error: <code>cannot allocate memory</code>.</p>
+
+<p>Did some research and found this <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html">docs</a> on increasing <code>max_map_count</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;vm.max_map_count=262144&#34;</span> | sudo tee -a /etc/sysctl.conf
+sudo sysctl -w vm.max_map_count<span style="color:#f92672">=</span><span style="color:#ae81ff">262144</span></code></pre></div>
+<p>But the problem still persists, turns out memory still actually still not enough. I want don&rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</p>
+
+<p>Swap memory to the rescue.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fallocate -l 2G /swapfile
+chmod <span style="color:#ae81ff">600</span> /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo <span style="color:#e6db74">&#39;/swapfile none swap sw 0 0&#39;</span> | sudo tee -a /etc/fstab</code></pre></div>
+<p>Run your elasticsearch and it should now be good.</p>
+
+<p>Small Rant: I don&rsquo;t get why we need more than 2GB of memory to just test ES.</p>
+</div>
+
+        
+        <div class="section bottom-menu">
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is zak?
+            </a>
+        
+            &#183; 
+            <a href="/dev">
+                dev
+            </a>
+        
+    
+    &#183; 
+    <a href="https://blog.zkanda.io">
+        main
+    </a>
+
+</p></div>
+        
+
+        <div class="section footer">Call me Sam, a theme for Hugo.</div>
+    </div>
+</body>
+
+</html>

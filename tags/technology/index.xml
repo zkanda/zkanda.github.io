@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>technology on Inside My Minds Journey</title>
+    <title>technology on Call me Zak</title>
     <link>https://blog.zkanda.io/tags/technology/</link>
-    <description>Recent content in technology on Inside My Minds Journey</description>
+    <description>Recent content in technology on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Mar 2018 22:55:57 +0000</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>our experience in resizing an ebs volume in ec2 instances.</title>
-      <link>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
+      <link>https://blog.zkanda.io/dev/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
       <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
+      <guid>https://blog.zkanda.io/dev/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
       <description>Increasing disk space without downtime.
 So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
 For the first time we search on how to do this, there are many articles written about it and most of them require to stop the system and detaching a volume. But there must be a real doc from aws itself, that is most likely up to date.</description>
@@ -24,10 +24,10 @@ For the first time we search on how to do this, there are many articles written 
     
     <item>
       <title>disabling udp in memcached.</title>
-      <link>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</link>
+      <link>https://blog.zkanda.io/dev/disabling-udp-in-memcached/</link>
       <pubDate>Wed, 07 Mar 2018 18:54:46 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/disabling-udp-in-memcached/</guid>
+      <guid>https://blog.zkanda.io/dev/disabling-udp-in-memcached/</guid>
       <description>One of our server provider which is running in Germany have a bot that scans for an open port, this is to prevent other humans/robot in abusing services that are open on the internet.
 For us, they determined that our memcached port is open, we were confused at first how could this happen, we were sure that this is blocked via iptables.
 It turns out memcached by default listens to both TCP and UDP, since we don&amp;rsquo;t have yet a firewall for UDP, we opted for something simpler and to disable UDP on memcached(we know we only use TCP).</description>
@@ -35,70 +35,70 @@ It turns out memcached by default listens to both TCP and UDP, since we don&amp;
     
     <item>
       <title>updating a configmap/secrets in kubernetes</title>
-      <link>https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/</link>
+      <link>https://blog.zkanda.io/dev/updating-a-configmap-secrets-in-kubernetes/</link>
       <pubDate>Tue, 06 Mar 2018 02:45:18 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/updating-a-configmap-secrets-in-kubernetes/</guid>
+      <guid>https://blog.zkanda.io/dev/updating-a-configmap-secrets-in-kubernetes/</guid>
       <description>At work, we started using Kubernetes for stateless application. We frequently change the values of configmap/secrets especially in staging environments, however, this is still not baked in to k8s.
 How to do it?
 You have to replace a config to update it.
 For example, if you create a configmap like this:
-kubectl create configmap site-config --from-file=nginx.conf  If you want to update that, you have to add the command above with</description>
+kubectl create configmap site-config --from-file=nginx.conf If you want to update that, you have to add the command above with</description>
     </item>
     
     <item>
       <title>golang: defer inside a for loop</title>
-      <link>https://blog.zkanda.io/tech/defer-inside-a-for-loop/</link>
+      <link>https://blog.zkanda.io/dev/defer-inside-a-for-loop/</link>
       <pubDate>Wed, 02 Aug 2017 10:17:25 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/defer-inside-a-for-loop/</guid>
+      <guid>https://blog.zkanda.io/dev/defer-inside-a-for-loop/</guid>
       <description>So I have an infinite for loop however I want to use defer to make my intention clearer.
 Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
-for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() }  Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
+for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() } Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
     </item>
     
     <item>
       <title>running elasticsearch on a 2gb digital ocean droplet</title>
-      <link>https://blog.zkanda.io/tech/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</link>
+      <link>https://blog.zkanda.io/dev/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</link>
       <pubDate>Mon, 03 Jul 2017 05:46:21 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
+      <guid>https://blog.zkanda.io/dev/running-elasticsearch-on-a-2gb-digital-ocean-droplet/</guid>
       <description>So I want to run Elasticsearch on a very limited memory machine and I keep running on this error: cannot allocate memory.
 Did some research and found this docs on increasing max_map_count:
-echo &amp;quot;vm.max_map_count=262144&amp;quot; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144  But the problem still persists, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>
+echo &amp;#34;vm.max_map_count=262144&amp;#34; | sudo tee -a /etc/sysctl.conf sudo sysctl -w vm.max_map_count=262144 But the problem still persists, turns out memory still actually still not enough. I want don&amp;rsquo;t to upgrade the memory since I just want to test things out and I have no plan on running it on production.</description>
     </item>
     
     <item>
       <title>installing python packages directly from github using pip</title>
-      <link>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</link>
+      <link>https://blog.zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</link>
       <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</guid>
+      <guid>https://blog.zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</guid>
       <description>Recently, I needed to install a package directly from Github which I&amp;rsquo;m trying to contribute into.
 For example, you have this url: https://github.com/zkanda/lambda-uploader
 What you can do is just add git+ as a prefix in the URL.
 Here&amp;rsquo;s how you can do it!
-pip install git+https://github.com/zkanda/lambda-uploader  But I want to install a code in another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
+pip install git+https://github.com/zkanda/lambda-uploader But I want to install a code in another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
     </item>
     
     <item>
       <title>setting vi mode on ipython</title>
-      <link>https://blog.zkanda.io/tech/setting-vi-mode-on-ipython-5/</link>
+      <link>https://blog.zkanda.io/dev/setting-vi-mode-on-ipython-5/</link>
       <pubDate>Wed, 13 Jul 2016 21:59:28 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/setting-vi-mode-on-ipython-5/</guid>
+      <guid>https://blog.zkanda.io/dev/setting-vi-mode-on-ipython-5/</guid>
       <description>When I upgraded my IPython version to 5 and one thing that I&amp;rsquo;m missing is vi mode binding. When I read the changelog, they now replace readline with prompt_toolkit a pure python interactive command line prompt. This is very nice because it supports all platform that Python supports.
 So to bring back your vi binding, you need to do some few changes.
-ipython profile create  This will create a default profile where you can change your IPython configuration.</description>
+ipython profile create This will create a default profile where you can change your IPython configuration.</description>
     </item>
     
     <item>
       <title>compiling a beta kernel in archlinux</title>
-      <link>https://blog.zkanda.io/tech/compiling-the-latest-beta-kernel-in-archlinux/</link>
+      <link>https://blog.zkanda.io/dev/compiling-the-latest-beta-kernel-in-archlinux/</link>
       <pubDate>Fri, 17 Jun 2016 01:19:50 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/compiling-the-latest-beta-kernel-in-archlinux/</guid>
+      <guid>https://blog.zkanda.io/dev/compiling-the-latest-beta-kernel-in-archlinux/</guid>
       <description>You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
  one missing feature was &amp;ldquo;suspend&amp;rdquo;, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
     </item>

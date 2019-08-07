@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>life on Inside My Minds Journey</title>
+    <title>life on Call me Zak</title>
     <link>https://blog.zkanda.io/tags/life/</link>
-    <description>Recent content in life on Inside My Minds Journey</description>
+    <description>Recent content in life on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Mar 2018 23:46:53 +0000</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>give more...</title>
-      <link>https://blog.zkanda.io/tech/give-more/</link>
+      <link>https://blog.zkanda.io/dev/give-more/</link>
       <pubDate>Mon, 05 Mar 2018 23:46:53 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/give-more/</guid>
+      <guid>https://blog.zkanda.io/dev/give-more/</guid>
       <description>I&amp;rsquo;m currently reading a book called Give and Take, it made me realize the value of sharing on my blog and in everyday life, I hope to write more about things that I can give value to others as well as a constant reminder of things that have given me lots of &amp;ldquo;Aha&amp;rdquo; moments in my career as a Software Developer.
 I really like the quote inside a quote in the book:</description>
     </item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Inside My Minds Journey</title>
+    <title>git on Call me Zak</title>
     <link>https://blog.zkanda.io/tags/git/</link>
-    <description>Recent content in git on Inside My Minds Journey</description>
+    <description>Recent content in git on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Dec 2016 04:17:08 +0000</lastBuildDate>
@@ -13,15 +13,15 @@
     
     <item>
       <title>installing python packages directly from github using pip</title>
-      <link>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</link>
+      <link>https://blog.zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</link>
       <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/installing-python-packages-directly-from-github-using-pip/</guid>
+      <guid>https://blog.zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</guid>
       <description>Recently, I needed to install a package directly from Github which I&amp;rsquo;m trying to contribute into.
 For example, you have this url: https://github.com/zkanda/lambda-uploader
 What you can do is just add git+ as a prefix in the URL.
 Here&amp;rsquo;s how you can do it!
-pip install git+https://github.com/zkanda/lambda-uploader  But I want to install a code in another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
+pip install git+https://github.com/zkanda/lambda-uploader But I want to install a code in another branch, so how do we do it? We just add @branch_name at the end of the url.</description>
     </item>
     
   </channel>

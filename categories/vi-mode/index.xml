@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vi-mode on Inside My Minds Journey</title>
+    <title>vi-mode on Call me Zak</title>
     <link>https://blog.zkanda.io/categories/vi-mode/</link>
-    <description>Recent content in vi-mode on Inside My Minds Journey</description>
+    <description>Recent content in vi-mode on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Jul 2016 21:59:28 +0000</lastBuildDate>
@@ -13,13 +13,13 @@
     
     <item>
       <title>setting vi mode on ipython</title>
-      <link>https://blog.zkanda.io/tech/setting-vi-mode-on-ipython-5/</link>
+      <link>https://blog.zkanda.io/dev/setting-vi-mode-on-ipython-5/</link>
       <pubDate>Wed, 13 Jul 2016 21:59:28 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/setting-vi-mode-on-ipython-5/</guid>
+      <guid>https://blog.zkanda.io/dev/setting-vi-mode-on-ipython-5/</guid>
       <description>When I upgraded my IPython version to 5 and one thing that I&amp;rsquo;m missing is vi mode binding. When I read the changelog, they now replace readline with prompt_toolkit a pure python interactive command line prompt. This is very nice because it supports all platform that Python supports.
 So to bring back your vi binding, you need to do some few changes.
-ipython profile create  This will create a default profile where you can change your IPython configuration.</description>
+ipython profile create This will create a default profile where you can change your IPython configuration.</description>
     </item>
     
   </channel>

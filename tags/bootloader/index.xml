@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bootloader on Inside My Minds Journey</title>
+    <title>bootloader on Call me Zak</title>
     <link>https://blog.zkanda.io/tags/bootloader/</link>
-    <description>Recent content in bootloader on Inside My Minds Journey</description>
+    <description>Recent content in bootloader on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Jan 2017 05:35:54 +0000</lastBuildDate>
@@ -13,13 +13,13 @@
     
     <item>
       <title>upgraded windows on my dual boot laptop causes problems on bootloader.</title>
-      <link>https://blog.zkanda.io/tech/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</link>
+      <link>https://blog.zkanda.io/dev/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</link>
       <pubDate>Mon, 30 Jan 2017 05:35:54 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/tech/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</guid>
+      <guid>https://blog.zkanda.io/dev/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</guid>
       <description>So I upgraded my Windows partition to latest insider preview and it kind of messed up my laptop.
 Here&amp;rsquo;s the error message:
-EFI stub: ERROR: failed to read file. Trying to load files to higher address EFI stub: ERROR: failed to read file.  Here&amp;rsquo;s the step I did to resolved it.
+EFI stub: ERROR: failed to read file. Trying to load files to higher address EFI stub: ERROR: failed to read file. Here&amp;rsquo;s the step I did to resolved it.
  Boot in an ArchLinux liveusb. Mount your root and boot partition. Chroot into it. And reinstall the bootloader.</description>
     </item>
     
