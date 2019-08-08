@@ -12,6 +12,6 @@ When I meet someone that does the same thing, I asked them, "Why do you do photo
 
 > I try with my pictures to raise a question, to provoke a debate, so that we can discuss problems together and come up with solutions.
 
-That quotation is from a famous person, namely *Sebastião Salgado*, he is a social documentary photographer, and his work is so phenomenal and heartbreaking. Nonetheless, he does it because he has a wild purpose.
+That quotation is from a famous photographer, namely *Sebastião Salgado*, he do a lot of social documentary photos, and his work is phenomenal and heartbreaking. Nonetheless, he does it because he has a wild purpose.
 
 To end this, I'd like to ask you the same question, why do you do photography?
