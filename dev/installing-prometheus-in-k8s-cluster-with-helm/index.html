@@ -35,7 +35,7 @@ installing prometheus in k8s cluster with helm - Call me Zak
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://blog.zkanda.io/tn.png"/>
+<meta name="twitter:image" content="https://zkanda.io/tn.png"/>
 
 <meta name="twitter:title" content="installing prometheus in k8s cluster with helm"/>
 <meta name="twitter:description" content="Prerequisite: A cluster with RBAC enabled. Have enough capacity in the cluster Install Helm:
@@ -47,9 +47,9 @@ helm install -f values.yaml --name prometheus stable/prometheus Ideally, this sh
 kubectl create serviceaccount tiller --namespace kube-system kubectl create clusterrolebinding tiller-rb --clusterrole=cluster-admin --serviceaccount=kube-system:tiller helm init --service-account tiller Get the values.yaml from here Edit some things that you want to tweak, for us, we change the CPU limit to a lower value. Then just install Prometheus:
 helm install -f values.yaml --name prometheus stable/prometheus Ideally, this should be installed in another namespace but we will keep it simple for now." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.zkanda.io/dev/installing-prometheus-in-k8s-cluster-with-helm/" />
+<meta property="og:url" content="https://zkanda.io/dev/installing-prometheus-in-k8s-cluster-with-helm/" />
 
-<meta property="og:image" content="https://blog.zkanda.io/tn.png" />
+<meta property="og:image" content="https://zkanda.io/tn.png" />
 <meta property="article:published_time" content="2018-09-04T04:10:21+00:00" />
 <meta property="article:modified_time" content="2018-09-04T04:10:21+00:00" /><meta property="og:site_name" content="Call me Sam" />
 
@@ -130,7 +130,7 @@ Then just install Prometheus:</p>
         
     
     &#183; 
-    <a href="https://blog.zkanda.io">
+    <a href="https://zkanda.io">
         main
     </a>
 

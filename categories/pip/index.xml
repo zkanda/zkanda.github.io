@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pip on Call me Zak</title>
-    <link>https://blog.zkanda.io/categories/pip/</link>
+    <link>https://zkanda.io/categories/pip/</link>
     <description>Recent content in pip on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Dec 2016 04:17:08 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.zkanda.io/categories/pip/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zkanda.io/categories/pip/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>installing python packages directly from github using pip</title>
-      <link>https://blog.zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</link>
+      <link>https://zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</link>
       <pubDate>Mon, 05 Dec 2016 04:17:08 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</guid>
+      <guid>https://zkanda.io/dev/installing-python-packages-directly-from-github-using-pip/</guid>
       <description>Recently, I needed to install a package directly from Github which I&amp;rsquo;m trying to contribute into.
 For example, you have this url: https://github.com/zkanda/lambda-uploader
 What you can do is just add git+ as a prefix in the URL.

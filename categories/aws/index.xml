@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aws on Call me Zak</title>
-    <link>https://blog.zkanda.io/categories/aws/</link>
+    <link>https://zkanda.io/categories/aws/</link>
     <description>Recent content in aws on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Mar 2018 22:55:57 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.zkanda.io/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zkanda.io/categories/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>our experience in resizing an ebs volume in ec2 instances.</title>
-      <link>https://blog.zkanda.io/dev/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
+      <link>https://zkanda.io/dev/experience-in-resizing-an-ebs-volume-in-ec2-instances/</link>
       <pubDate>Mon, 19 Mar 2018 22:55:57 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/dev/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
+      <guid>https://zkanda.io/dev/experience-in-resizing-an-ebs-volume-in-ec2-instances/</guid>
       <description>Increasing disk space without downtime.
 So in our team, we had to resize an instance disk because it&amp;rsquo;s getting full, this is our experience.
 For the first time we search on how to do this, there are many articles written about it and most of them require to stop the system and detaching a volume. But there must be a real doc from aws itself, that is most likely up to date.</description>

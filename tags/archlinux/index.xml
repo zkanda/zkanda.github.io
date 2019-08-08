@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>archlinux on Call me Zak</title>
-    <link>https://blog.zkanda.io/tags/archlinux/</link>
+    <link>https://zkanda.io/tags/archlinux/</link>
     <description>Recent content in archlinux on Call me Zak</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Jan 2017 05:35:54 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.zkanda.io/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zkanda.io/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>upgraded windows on my dual boot laptop causes problems on bootloader.</title>
-      <link>https://blog.zkanda.io/dev/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</link>
+      <link>https://zkanda.io/dev/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</link>
       <pubDate>Mon, 30 Jan 2017 05:35:54 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/dev/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</guid>
+      <guid>https://zkanda.io/dev/recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux/</guid>
       <description>So I upgraded my Windows partition to latest insider preview and it kind of messed up my laptop.
 Here&amp;rsquo;s the error message:
 EFI stub: ERROR: failed to read file. Trying to load files to higher address EFI stub: ERROR: failed to read file. Here&amp;rsquo;s the step I did to resolved it.
@@ -25,10 +25,10 @@ EFI stub: ERROR: failed to read file. Trying to load files to higher address EFI
     
     <item>
       <title>compiling a beta kernel in archlinux</title>
-      <link>https://blog.zkanda.io/dev/compiling-the-latest-beta-kernel-in-archlinux/</link>
+      <link>https://zkanda.io/dev/compiling-the-latest-beta-kernel-in-archlinux/</link>
       <pubDate>Fri, 17 Jun 2016 01:19:50 +0000</pubDate>
       
-      <guid>https://blog.zkanda.io/dev/compiling-the-latest-beta-kernel-in-archlinux/</guid>
+      <guid>https://zkanda.io/dev/compiling-the-latest-beta-kernel-in-archlinux/</guid>
       <description>You have a new laptop, you install ArchLinux on it and seems like some things are missing. This is currently the case for me:
  one missing feature was &amp;ldquo;suspend&amp;rdquo;, my laptop just seems to boot as if I turned off everything, my application is not persisted another is a fix for my headphone noise issue, just to name a few&amp;hellip;  One of the few things you can try is to install the latest beta kernel.</description>
     </item>
