@@ -1,4 +1,4 @@
-baseURL = "https://blog.zkanda.io"
+baseURL = "https://zkanda.io"
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
