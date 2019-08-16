@@ -12,7 +12,7 @@ Sonnie, a young, strong and beautiful woman from Penang, currently studying in t
 
 ![sonnie](/posts/images/sonnie-2.jpg)
 
-Her alpha-like attitude knowledge doesn't speak of her age,  and bargaining skills are next to nothing.
+Her alpha-like attitude and knowledge doesn't speak of her age,  and bargaining skills are next to nothing.
 
 ![sonnie](/posts/images/sonnie-3.jpg)
 
