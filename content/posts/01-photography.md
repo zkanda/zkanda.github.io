@@ -1,6 +1,7 @@
 ---
 title: "Photography"
 date: 2019-07-27T23:24:39+08:00
+showDate: true
 draft: false
 ---
 

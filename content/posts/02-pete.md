@@ -2,6 +2,8 @@
 title: "Pete"
 date: 2019-08-07T22:59:30+07:00
 draft: false
+showDate: true
+tags: ["blog","story"]
 ---
 
 Pete is his name. He's the first person I asked if it's okay to take a photo of him. I'm glad he said, "yes."
