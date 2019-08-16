@@ -3,25 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zkanda.io/tags/blog/</loc>
+    <lastmod>2019-08-10T14:48:17+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/</loc>
+    <lastmod>2019-08-10T14:48:17+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/posts/</loc>
+    <lastmod>2019-08-10T14:48:17+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/posts/03-sonnie/</loc>
+    <lastmod>2019-08-10T14:48:17+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/tags/story/</loc>
+    <lastmod>2019-08-10T14:48:17+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/tags/</loc>
+    <lastmod>2019-08-10T14:48:17+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zkanda.io/about/</loc>
     <lastmod>2019-08-07T23:52:03+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zkanda.io/</loc>
-    <lastmod>2019-08-07T23:52:03+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://zkanda.io/posts/02-pete/</loc>
     <lastmod>2019-08-07T22:59:30+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zkanda.io/posts/</loc>
-    <lastmod>2019-08-07T22:59:30+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -32,7 +50,6 @@
   <url>
     <loc>https://zkanda.io/dev/</loc>
     <lastmod>2018-11-07T04:19:05+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -51,51 +68,38 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/</loc>
+    <loc>https://zkanda.io/tags/aws/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkanda.io/tags/</loc>
-    <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/categories/aws/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/aws/</loc>
+    <loc>https://zkanda.io/categories/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkanda.io/categories/devops/</loc>
-    <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/devops/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/linux/</loc>
+    <loc>https://zkanda.io/categories/devops/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/linux/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/categories/linux/</loc>
+    <lastmod>2018-03-19T22:55:57+00:00</lastmod>
   </url>
   
   <url>
@@ -104,27 +108,23 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/software/</loc>
+    <loc>https://zkanda.io/tags/software/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/software/</loc>
+    <loc>https://zkanda.io/categories/software/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/categories/technology/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/technology/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -133,39 +133,33 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/configmap/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://zkanda.io/tags/configmap/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/kubernetes/</loc>
+    <loc>https://zkanda.io/categories/configmap/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/kubernetes/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/secrets/</loc>
+    <loc>https://zkanda.io/categories/kubernetes/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/secrets/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/categories/secrets/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
   </url>
   
   <url>
@@ -181,37 +175,31 @@
   <url>
     <loc>https://zkanda.io/categories/life/</loc>
     <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/life/</loc>
     <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkanda.io/categories/thoughts/</loc>
-    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/thoughts/</loc>
     <lastmod>2018-03-05T23:46:53+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/golang/</loc>
-    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://zkanda.io/categories/thoughts/</loc>
+    <lastmod>2018-03-05T23:46:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/golang/</loc>
     <lastmod>2017-08-02T10:17:25+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/categories/golang/</loc>
+    <lastmod>2017-08-02T10:17:25+00:00</lastmod>
   </url>
   
   <url>
@@ -222,13 +210,11 @@
   <url>
     <loc>https://zkanda.io/categories/elasticsearch/</loc>
     <lastmod>2017-07-03T05:46:21+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/elasticsearch/</loc>
     <lastmod>2017-07-03T05:46:21+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -239,7 +225,6 @@
   <url>
     <loc>https://zkanda.io/tags/conference/</loc>
     <lastmod>2017-05-27T05:20:35+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -250,7 +235,6 @@
   <url>
     <loc>https://zkanda.io/tags/singapore/</loc>
     <lastmod>2017-05-27T05:20:35+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -266,25 +250,21 @@
   <url>
     <loc>https://zkanda.io/categories/archlinux/</loc>
     <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/archlinux/</loc>
     <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkanda.io/categories/bootloader/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/bootloader/</loc>
     <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/categories/bootloader/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
   </url>
   
   <url>
@@ -293,27 +273,23 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/windows/</loc>
-    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://zkanda.io/tags/windows/</loc>
     <lastmod>2017-01-30T05:35:54+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/git/</loc>
-    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://zkanda.io/categories/windows/</loc>
+    <lastmod>2017-01-30T05:35:54+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/git/</loc>
     <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/categories/git/</loc>
+    <lastmod>2016-12-05T04:17:08+00:00</lastmod>
   </url>
   
   <url>
@@ -324,25 +300,21 @@
   <url>
     <loc>https://zkanda.io/categories/pip/</loc>
     <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/pip/</loc>
     <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/categories/python/</loc>
     <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/python/</loc>
     <lastmod>2016-12-05T04:17:08+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -351,15 +323,13 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/ipython/</loc>
+    <loc>https://zkanda.io/tags/ipython/</loc>
     <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/ipython/</loc>
+    <loc>https://zkanda.io/categories/ipython/</loc>
     <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -368,27 +338,23 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/vi-mode/</loc>
-    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://zkanda.io/tags/vi-mode/</loc>
     <lastmod>2016-07-13T21:59:28+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/compile/</loc>
-    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://zkanda.io/categories/vi-mode/</loc>
+    <lastmod>2016-07-13T21:59:28+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zkanda.io/tags/compile/</loc>
     <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/categories/compile/</loc>
+    <lastmod>2016-06-17T01:19:50+00:00</lastmod>
   </url>
   
   <url>
@@ -397,15 +363,13 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/kernel/</loc>
+    <loc>https://zkanda.io/tags/kernel/</loc>
     <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/kernel/</loc>
+    <loc>https://zkanda.io/categories/kernel/</loc>
     <lastmod>2016-06-17T01:19:50+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
