@@ -16,4 +16,4 @@ Her alpha-like attitude and knowledge doesn't speak of her age,  and bargaining 
 
 ![sonnie](/posts/images/sonnie-3.jpg)
 
-Most of all, she can easily talk to anyone, and you can tell she's listening.
+She's an adventurer at heart, but most of all, she can easily talk to anyone, and you can tell she's listening.
