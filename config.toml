@@ -16,9 +16,9 @@ pygmentsCodefences       = true
     footerText           = "You only live once, smile and make it count."
 
 # Metadata for Open Graph and Twitter
-    description          = "A new Hugo site."               # Max 160 characters show in search results
+    description          = "A story telling blog."               # Max 160 characters show in search results
     images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
-    title                = "Call me Sam"
+    title                = "Call me Zak"
 
 [[params.mainMenu]]
     link = "/posts"
