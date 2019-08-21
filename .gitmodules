@@ -1,6 +1,0 @@
-[submodule "themes/yinyang"]
-	path = themes/yinyang
-	url = https://github.com/zkanda/hugo-theme-yinyang.git
-[submodule "themes/sam"]
-	path = themes/sam
-	url = https://github.com/victoriadrake/hugo-theme-sam.git
