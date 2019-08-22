@@ -118,12 +118,12 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/technology/</loc>
+    <loc>https://zkanda.io/tags/technology/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/technology/</loc>
+    <loc>https://zkanda.io/categories/technology/</loc>
     <lastmod>2018-03-19T22:55:57+00:00</lastmod>
   </url>
   
@@ -133,17 +133,12 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/configmap/</loc>
-    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zkanda.io/categories/configmap/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/kubernetes/</loc>
+    <loc>https://zkanda.io/tags/configmap/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
   </url>
   
@@ -153,12 +148,17 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/secrets/</loc>
+    <loc>https://zkanda.io/tags/kubernetes/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zkanda.io/categories/secrets/</loc>
+    <lastmod>2018-03-06T02:45:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zkanda.io/tags/secrets/</loc>
     <lastmod>2018-03-06T02:45:18+00:00</lastmod>
   </url>
   
@@ -258,12 +258,12 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/bootloader/</loc>
+    <loc>https://zkanda.io/categories/bootloader/</loc>
     <lastmod>2017-01-30T05:35:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/bootloader/</loc>
+    <loc>https://zkanda.io/tags/bootloader/</loc>
     <lastmod>2017-01-30T05:35:54+00:00</lastmod>
   </url>
   
@@ -323,12 +323,12 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/ipython/</loc>
+    <loc>https://zkanda.io/categories/ipython/</loc>
     <lastmod>2016-07-13T21:59:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/ipython/</loc>
+    <loc>https://zkanda.io/tags/ipython/</loc>
     <lastmod>2016-07-13T21:59:28+00:00</lastmod>
   </url>
   
@@ -363,12 +363,12 @@
   </url>
   
   <url>
-    <loc>https://zkanda.io/tags/kernel/</loc>
+    <loc>https://zkanda.io/categories/kernel/</loc>
     <lastmod>2016-06-17T01:19:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zkanda.io/categories/kernel/</loc>
+    <loc>https://zkanda.io/tags/kernel/</loc>
     <lastmod>2016-06-17T01:19:50+00:00</lastmod>
   </url>
   
