@@ -15,4 +15,5 @@ What are these things I'd like to become better at?
 
 * Photography
 * Software Development
+* Build a coworking space.
 * Diet and Exercise.
