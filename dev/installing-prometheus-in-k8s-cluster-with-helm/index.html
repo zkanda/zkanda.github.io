@@ -9,11 +9,11 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
+
 <meta name="description" content="my random blabbing">
 <title>
-installing prometheus in k8s cluster with helm - intimacy of my thoughts
+    installing prometheus in k8s cluster with helm - intimacy of my thoughts
 </title>
-
 
 
 
@@ -26,11 +26,11 @@ installing prometheus in k8s cluster with helm - intimacy of my thoughts
 
 
 
-<link rel="stylesheet" href="/css/main.min.00875da36aaf66b43dd98d02c564ffc2a307908082cf20a1c1522d719463b7e4.css" integrity="sha256-AIddo2qvZrQ92Y0CxWT/wqMHkICCzyChwVItcZRjt&#43;Q=" crossorigin="anonymous" media="screen">
+<link rel="stylesheet" href="/css/main.min.670da4c21f08f6fb9346ba65b362026a143c88c6d6e4292b05476774b0516a42.css" integrity="sha256-Zw2kwh8I9vuTRrpls2ICahQ8iMbW5CkrBUdndLBRakI=" crossorigin="anonymous" media="screen">
 
 
 
- 
+
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
 
@@ -66,10 +66,15 @@ helm install -f values.yaml --name prometheus stable/prometheus Ideally, this sh
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="section" id="title">installing prometheus in k8s cluster with helm</div>
-
-        <div class="section" id="content"><p>Prerequisite:
+    
+    
+    <header class="wrap flex-container">
+        <h1>installing prometheus in k8s cluster with helm</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>Prerequisite:
 A cluster with RBAC enabled.
 Have enough capacity in the cluster
 Install Helm:</p>
@@ -90,10 +95,13 @@ Then just install Prometheus:</p>
 </ul>
 <p>The server will automatically discover your cluster and you will have a whole bunch of metrics available, it can be overwhelming so don&rsquo;t pay attention too much about it.</p>
 <p>In the next post: We will configure alertmanager to send alerts for basic things like CPU, Memory and Disk usage. At least this is our initial goal why we want to use Prometheus.</p>
-</div>
+</article>
+        
 
         
-        <div class="section bottom-menu">
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
 <hr />
 <p>
 
@@ -102,39 +110,35 @@ Then just install Prometheus:</p>
 
     
         
-            <a href="/posts">
-                posts
-            </a>
+            <a href="/posts">posts</a>
         
     
     
         
             &#183; 
-            <a href="/gallery">
-                gallery
-            </a>
+            <a href="/gallery">gallery</a>
         
             &#183; 
-            <a href="/about">
-                who is zak?
-            </a>
+            <a href="/about">who is zak?</a>
         
             &#183; 
-            <a href="/dev">
-                dev
-            </a>
+            <a href="/dev">dev</a>
         
     
     &#183; 
-    <a href="https://zkanda.io">
+    <a href="/">
         main
     </a>
 
-</p></div>
+</p>
+        </nav>
         
-
-        <div class="section footer">You only live once, smile and make it count.</div>
-    </div>
+        
+    </main>
+    
+    <footer class="flex-container footer">You only live once, smile and make it count.</footer>
+    
+    
 </body>
 
 </html>
