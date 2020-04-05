@@ -25,7 +25,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - run: npm install -g postcss-cli autoprefixes
+    - run: npm install -g postcss-cli autoprefixer
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
