@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>golang on intimacy of my thoughts</title>
-    <link>https://zkanda.io/categories/golang/</link>
-    <description>Recent content in golang on intimacy of my thoughts</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2017 10:17:25 +0000</lastBuildDate>
-    
-	<atom:link href="https://zkanda.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>golang: defer inside a for loop</title>
-      <link>https://zkanda.io/dev/defer-inside-a-for-loop/</link>
-      <pubDate>Wed, 02 Aug 2017 10:17:25 +0000</pubDate>
-      
-      <guid>https://zkanda.io/dev/defer-inside-a-for-loop/</guid>
-      <description>So I have an infinite for loop however I want to use defer to make my intention clearer.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on intimacy of my thoughts</title><link>https://zkanda.io/categories/golang/</link><description>Recent content in golang on intimacy of my thoughts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Aug 2017 10:17:25 +0000</lastBuildDate><atom:link href="https://zkanda.io/categories/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>golang: defer inside a for loop</title><link>https://zkanda.io/dev/defer-inside-a-for-loop/</link><pubDate>Wed, 02 Aug 2017 10:17:25 +0000</pubDate><guid>https://zkanda.io/dev/defer-inside-a-for-loop/</guid><description>So I have an infinite for loop however I want to use defer to make my intention clearer.
 Problem is this defer would never run because my function wouldn&amp;rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
-for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() } Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description>
-    </item>
-    
-  </channel>
-</rss>
+for x := 0; x &amp;lt; 2; x++ { func() { defer fmt.Println(x) }() } Real world use case: So what I&amp;rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</description></item></channel></rss>

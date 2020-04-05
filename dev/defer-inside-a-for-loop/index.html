@@ -1,183 +1,68 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
-
-<meta name="description" content="my random blabbing">
-<title>
-    golang: defer inside a for loop - intimacy of my thoughts
-</title>
-
-
-
-<link rel="shortcut icon" href="/sam.ico">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.min.670da4c21f08f6fb9346ba65b362026a143c88c6d6e4292b05476774b0516a42.css" integrity="sha256-Zw2kwh8I9vuTRrpls2ICahQ8iMbW5CkrBUdndLBRakI=" crossorigin="anonymous" media="screen">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://zkanda.io/tn.png"/>
-
-<meta name="twitter:title" content="golang: defer inside a for loop"/>
-<meta name="twitter:description" content="So I have an infinite for loop however I want to use defer to make my intention clearer.
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="chrome=1"><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content="no-referrer"><meta name=description content="my random blabbing"><title>golang: defer inside a for loop - intimacy of my thoughts</title><link rel="shortcut icon" href=/sam.ico><link rel=stylesheet href=/css/main.min.670da4c21f08f6fb9346ba65b362026a143c88c6d6e4292b05476774b0516a42.css integrity="sha256-Zw2kwh8I9vuTRrpls2ICahQ8iMbW5CkrBUdndLBRakI=" crossorigin=anonymous media=screen><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Didact+Gothic"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://zkanda.io/tn.png"><meta name=twitter:title content="golang: defer inside a for loop"><meta name=twitter:description content="So I have an infinite for loop however I want to use defer to make my intention clearer.
 Problem is this defer would never run because my function wouldn&rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
-for x := 0; x &lt; 2; x&#43;&#43; { func() { defer fmt.Println(x) }() } Real world use case: So what I&rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen)."/>
-
-<meta property="og:title" content="golang: defer inside a for loop" />
-<meta property="og:description" content="So I have an infinite for loop however I want to use defer to make my intention clearer.
+for x := 0; x < 2; x++ { func() { defer fmt.Println(x) }() } Real world use case: So what I&rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen)."><meta property="og:title" content="golang: defer inside a for loop"><meta property="og:description" content="So I have an infinite for loop however I want to use defer to make my intention clearer.
 Problem is this defer would never run because my function wouldn&rsquo;t return. This, in turn, would give you memory leak.
 As neat as it could be, you can use a closure/anonymous function for this.
-for x := 0; x &lt; 2; x&#43;&#43; { func() { defer fmt.Println(x) }() } Real world use case: So what I&rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen)." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://zkanda.io/dev/defer-inside-a-for-loop/" />
-<meta property="og:image" content="https://zkanda.io/tn.png"/>
-<meta property="article:published_time" content="2017-08-02T10:17:25+00:00" />
-<meta property="article:modified_time" content="2017-08-02T10:17:25+00:00" /><meta property="og:site_name" content="intimacy of my thoughts" />
-
-
-    
-
-    
-    
-    
-    <title>
-        
-        golang: defer inside a for loop
-        
-    </title>
-</head>
-
-<body>
-    
-    
-    <header class="wrap flex-container">
-        <h1>golang: defer inside a for loop</h1>
-    </header>
-    
-    <main class="wrap">
-        
-        <article role="article" class="flex-container"><p>So I have an infinite <code>for loop</code> however I want to use <code>defer</code> to make my intention clearer.</p>
-<p>Problem is this <code>defer</code> would never run because my function wouldn&rsquo;t return. This, in turn, would give you memory leak.</p>
-<p>As neat as it could be, you can use a closure/anonymous function for this.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">x</span> &lt; <span style="color:#ae81ff">2</span>; <span style="color:#a6e22e">x</span><span style="color:#f92672">++</span> {
-        <span style="color:#66d9ef">func</span>() {
-            <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">x</span>)
+for x := 0; x < 2; x++ { func() { defer fmt.Println(x) }() } Real world use case: So what I&rsquo;m trying to do is to have an infinite polling using context on AWS SQS to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen)."><meta property="og:type" content="article"><meta property="og:url" content="https://zkanda.io/dev/defer-inside-a-for-loop/"><meta property="og:image" content="https://zkanda.io/tn.png"><meta property="article:published_time" content="2017-08-02T10:17:25+00:00"><meta property="article:modified_time" content="2017-08-02T10:17:25+00:00"><meta property="og:site_name" content="intimacy of my thoughts"><title>golang: defer inside a for loop</title></head><body><header class="wrap flex-container"><h1>golang: defer inside a for loop</h1></header><main class=wrap><article role=article class=flex-container><p>So I have an infinite <code>for loop</code> however I want to use <code>defer</code> to make my intention clearer.</p><p>Problem is this <code>defer</code> would never run because my function wouldn&rsquo;t return. This, in turn, would give you memory leak.</p><p>As neat as it could be, you can use a closure/anonymous function for this.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go>    <span style=color:#66d9ef>for</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>x</span> &lt; <span style=color:#ae81ff>2</span>; <span style=color:#a6e22e>x</span><span style=color:#f92672>++</span> {
+        <span style=color:#66d9ef>func</span>() {
+            <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>x</span>)
         }()
     }
-</code></pre></div><h2 id="real-world-use-case">Real world use case:</h2>
-<p>So what I&rsquo;m trying to do is to have an infinite polling using <code>context</code> on <a href="https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/sqs-example-enable-long-polling.html">AWS SQS</a> to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><h2 id=real-world-use-case>Real world use case:</h2><p>So what I&rsquo;m trying to do is to have an infinite polling using <code>context</code> on <a href=https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/sqs-example-enable-long-polling.html>AWS SQS</a> to add a timeout if something is wrong with SQS(this can be anything from network errors to aws being down, it can happen).</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
 
-<span style="color:#f92672">import</span> (
-	<span style="color:#e6db74">&#34;context&#34;</span>
-	<span style="color:#e6db74">&#34;fmt&#34;</span>
-	<span style="color:#e6db74">&#34;time&#34;</span>
+<span style=color:#f92672>import</span> (
+	<span style=color:#e6db74>&#34;context&#34;</span>
+	<span style=color:#e6db74>&#34;fmt&#34;</span>
+	<span style=color:#e6db74>&#34;time&#34;</span>
 
-	<span style="color:#e6db74">&#34;github.com/aws/aws-sdk-go/aws&#34;</span>
-	<span style="color:#e6db74">&#34;github.com/aws/aws-sdk-go/aws/session&#34;</span>
-	<span style="color:#e6db74">&#34;github.com/aws/aws-sdk-go/service/sqs&#34;</span>
+	<span style=color:#e6db74>&#34;github.com/aws/aws-sdk-go/aws&#34;</span>
+	<span style=color:#e6db74>&#34;github.com/aws/aws-sdk-go/aws/session&#34;</span>
+	<span style=color:#e6db74>&#34;github.com/aws/aws-sdk-go/service/sqs&#34;</span>
 )
 
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-	<span style="color:#a6e22e">sess</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">session</span>.<span style="color:#a6e22e">Must</span>(<span style="color:#a6e22e">session</span>.<span style="color:#a6e22e">NewSessionWithOptions</span>(<span style="color:#a6e22e">session</span>.<span style="color:#a6e22e">Options</span>{
-		<span style="color:#a6e22e">SharedConfigState</span>: <span style="color:#a6e22e">session</span>.<span style="color:#a6e22e">SharedConfigEnable</span>,
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+	<span style=color:#a6e22e>sess</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>session</span>.<span style=color:#a6e22e>Must</span>(<span style=color:#a6e22e>session</span>.<span style=color:#a6e22e>NewSessionWithOptions</span>(<span style=color:#a6e22e>session</span>.<span style=color:#a6e22e>Options</span>{
+		<span style=color:#a6e22e>SharedConfigState</span>: <span style=color:#a6e22e>session</span>.<span style=color:#a6e22e>SharedConfigEnable</span>,
 	}))
 
-	<span style="color:#a6e22e">svc</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">sqs</span>.<span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">sess</span>)
+	<span style=color:#a6e22e>svc</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>sqs</span>.<span style=color:#a6e22e>New</span>(<span style=color:#a6e22e>sess</span>)
 
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">timeout</span> <span style="color:#66d9ef">int64</span> = <span style="color:#ae81ff">5</span>
+	<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>timeout</span> <span style=color:#66d9ef>int64</span> = <span style=color:#ae81ff>5</span>
 
-	<span style="color:#75715e">// URL to our queue
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">qURL</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;https://sqs.eu-west-1.amazonaws.com/237546493679/test-context-timeout&#34;</span>
+	<span style=color:#75715e>// URL to our queue
+</span><span style=color:#75715e></span>	<span style=color:#a6e22e>qURL</span> <span style=color:#f92672>:=</span> <span style=color:#e6db74>&#34;https://sqs.eu-west-1.amazonaws.com/237546493679/test-context-timeout&#34;</span>
 
-	<span style="color:#66d9ef">for</span> {
-		<span style="color:#66d9ef">func</span>() {
-			<span style="color:#a6e22e">ctx</span>, <span style="color:#a6e22e">cancel</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">WithTimeout</span>(<span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>(), <span style="color:#ae81ff">10</span><span style="color:#f92672">*</span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>)
-			<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">cancel</span>()
+	<span style=color:#66d9ef>for</span> {
+		<span style=color:#66d9ef>func</span>() {
+			<span style=color:#a6e22e>ctx</span>, <span style=color:#a6e22e>cancel</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>context</span>.<span style=color:#a6e22e>WithTimeout</span>(<span style=color:#a6e22e>context</span>.<span style=color:#a6e22e>Background</span>(), <span style=color:#ae81ff>10</span><span style=color:#f92672>*</span><span style=color:#a6e22e>time</span>.<span style=color:#a6e22e>Second</span>)
+			<span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>cancel</span>()
 
-			<span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">svc</span>.<span style="color:#a6e22e">ReceiveMessageWithContext</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">sqs</span>.<span style="color:#a6e22e">ReceiveMessageInput</span>{
-				<span style="color:#a6e22e">MaxNumberOfMessages</span>: <span style="color:#a6e22e">aws</span>.<span style="color:#a6e22e">Int64</span>(<span style="color:#ae81ff">10</span>),
-				<span style="color:#a6e22e">QueueUrl</span>:            <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">qURL</span>,
-				<span style="color:#a6e22e">WaitTimeSeconds</span>:     <span style="color:#a6e22e">aws</span>.<span style="color:#a6e22e">Int64</span>(<span style="color:#a6e22e">timeout</span>),
+			<span style=color:#a6e22e>result</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>svc</span>.<span style=color:#a6e22e>ReceiveMessageWithContext</span>(<span style=color:#a6e22e>ctx</span>, <span style=color:#f92672>&amp;</span><span style=color:#a6e22e>sqs</span>.<span style=color:#a6e22e>ReceiveMessageInput</span>{
+				<span style=color:#a6e22e>MaxNumberOfMessages</span>: <span style=color:#a6e22e>aws</span>.<span style=color:#a6e22e>Int64</span>(<span style=color:#ae81ff>10</span>),
+				<span style=color:#a6e22e>QueueUrl</span>:            <span style=color:#f92672>&amp;</span><span style=color:#a6e22e>qURL</span>,
+				<span style=color:#a6e22e>WaitTimeSeconds</span>:     <span style=color:#a6e22e>aws</span>.<span style=color:#a6e22e>Int64</span>(<span style=color:#a6e22e>timeout</span>),
 			})
 
-			<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-				<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Error&#34;</span>, <span style="color:#a6e22e">err</span>)
-				<span style="color:#66d9ef">return</span>
+			<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+				<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#e6db74>&#34;Error&#34;</span>, <span style=color:#a6e22e>err</span>)
+				<span style=color:#66d9ef>return</span>
 			}
 
-			<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Received %d messages.\n&#34;</span>, len(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">Messages</span>))
-			<span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">Messages</span>) &gt; <span style="color:#ae81ff">0</span> {
-				<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">Messages</span>)
+			<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Printf</span>(<span style=color:#e6db74>&#34;Received %d messages.\n&#34;</span>, len(<span style=color:#a6e22e>result</span>.<span style=color:#a6e22e>Messages</span>))
+			<span style=color:#66d9ef>if</span> len(<span style=color:#a6e22e>result</span>.<span style=color:#a6e22e>Messages</span>) &gt; <span style=color:#ae81ff>0</span> {
+				<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>result</span>.<span style=color:#a6e22e>Messages</span>)
 			}
 
 		}()
 	}
 }
-</code></pre></div></article>
-        
-
-        
-        
-        <nav role="navigation" class="flex-container bottom-menu">
-            
-<hr />
-<p>
-
-
-    
-
-    
-        
-            <a href="/posts">posts</a>
-        
-    
-    
-        
-            &#183; 
-            <a href="/gallery">gallery</a>
-        
-            &#183; 
-            <a href="/about">who is zak?</a>
-        
-            &#183; 
-            <a href="/dev">dev</a>
-        
-    
-    &#183; 
-    <a href="/">
-        main
-    </a>
-
-</p>
-        </nav>
-        
-        
-    </main>
-    
-    <footer class="flex-container footer">You only live once, smile and make it count.</footer>
-    
-    
-</body>
-
-</html>
+</code></pre></div></article><nav role=navigation class="flex-container bottom-menu"><hr><p><a href=/posts>posts</a>
+&#183;
+<a href=/gallery>gallery</a>
+&#183;
+<a href=/about>who is zak?</a>
+&#183;
+<a href=/dev>dev</a>
+&#183;
+<a href=/>main</a></p></nav></main><footer class="flex-container footer">You only live once, smile and make it count.</footer></body></html>
