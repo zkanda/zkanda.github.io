@@ -30,8 +30,13 @@ jobs:
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.68.3'
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+    - name: update master
+      run: make
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public

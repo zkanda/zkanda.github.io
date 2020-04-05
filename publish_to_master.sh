@@ -22,4 +22,4 @@ echo "Generating site"
 hugo
 
 echo "Updating master branch"
-cd public && git add --all && git commit -m "Publish to master (publish.sh)" && git push
+cd public && git add --all && git commit -m "Publish to master (publish.sh)"
