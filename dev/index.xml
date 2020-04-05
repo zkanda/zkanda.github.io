@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devs on Call me Zak</title>
+    <title>Devs on intimacy of my thoughts</title>
     <link>https://zkanda.io/dev/</link>
-    <description>Recent content in Devs on Call me Zak</description>
+    <description>Recent content in Devs on intimacy of my thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Nov 2018 04:19:05 +0000</lastBuildDate>
@@ -158,7 +158,7 @@ CREATE DATABASE testdb OWNER testuser; That&amp;rsquo;s it.</description>
       <description>So I upgraded my Windows partition to latest insider preview and it kind of messed up my laptop.
 Here&amp;rsquo;s the error message:
 EFI stub: ERROR: failed to read file. Trying to load files to higher address EFI stub: ERROR: failed to read file. Here&amp;rsquo;s the step I did to resolved it.
- Boot in an ArchLinux liveusb. Mount your root and boot partition. Chroot into it. And reinstall the bootloader.</description>
+ Boot in an ArchLinux liveusb. Mount your root and boot partition. Chroot into it. And reinstall the bootloader.  mkinitcpio -p linux bootctl install Reboot and it should be good now.</description>
     </item>
     
     <item>
