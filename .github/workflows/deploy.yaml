@@ -26,9 +26,12 @@ jobs:
       with:
         node-version: '10.x'
     - run: npm install -g postcss-cli autoprefixer
-    - name: update master
-      run: make
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.68.3'
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
