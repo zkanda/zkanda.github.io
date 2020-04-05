@@ -2,7 +2,7 @@ baseURL = "https://zkanda.io"
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
-title                    = "Call me Zak"
+title                    = "intimacy of my thoughts"
 theme                    = "sam"
 pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
 pygmentsCodefences       = true
@@ -16,9 +16,9 @@ pygmentsCodefences       = true
     footerText           = "You only live once, smile and make it count."
 
 # Metadata for Open Graph and Twitter
-    description          = "a story telling blog"               # Max 160 characters show in search results
+    description          = "my random blabbing"               # Max 160 characters show in search results
     images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
-    title                = "Call me Zak"
+    title                = "intimacy of my thoughts"
 
 [[params.mainMenu]]
     link = "/posts"
