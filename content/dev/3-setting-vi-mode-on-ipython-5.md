@@ -4,6 +4,7 @@ categories = ["technology", "ipython", "vi-mode"]
 date = 2016-07-13T21:59:28Z
 description = ""
 draft = false
+showDate = true
 slug = "setting-vi-mode-on-ipython-5"
 tags = ["technology", "ipython", "vi-mode"]
 title = "setting vi mode on ipython"

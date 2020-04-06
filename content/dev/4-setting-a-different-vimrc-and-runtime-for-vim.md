@@ -3,6 +3,7 @@ author = "Zakatell Kanda"
 date = 2016-11-29T01:25:20Z
 description = ""
 draft = false
+showDate = true
 slug = "setting-a-different-vimrc-and-runtime-for-vim"
 title = "setting a different vimrc and runtime for vim"
 

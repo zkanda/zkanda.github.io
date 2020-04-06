@@ -3,6 +3,7 @@ author = "Zakatell Kanda"
 date = 2018-11-07T04:19:05Z
 description = ""
 draft = false
+showDate = true
 slug = "golang-dynamic-type-in-json-field"
 title = "golang: dynamic type in a json field"
 

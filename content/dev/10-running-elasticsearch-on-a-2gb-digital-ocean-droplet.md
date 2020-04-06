@@ -4,6 +4,7 @@ categories = ["technology", "elasticsearch", "linux"]
 date = 2017-07-03T05:46:21Z
 description = ""
 draft = false
+showDate = true
 slug = "running-elasticsearch-on-a-2gb-digital-ocean-droplet"
 tags = ["technology", "elasticsearch", "linux"]
 title = "running elasticsearch on a 2gb digital ocean droplet"

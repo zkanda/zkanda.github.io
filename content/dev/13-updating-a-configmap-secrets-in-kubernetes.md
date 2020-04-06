@@ -4,6 +4,7 @@ categories = ["technology", "software", "kubernetes", "configmap", "secrets"]
 date = 2018-03-06T02:45:18Z
 description = ""
 draft = false
+showDate = true
 slug = "updating-a-configmap-secrets-in-kubernetes"
 tags = ["technology", "software", "kubernetes", "configmap", "secrets"]
 title = "updating a configmap/secrets in kubernetes"

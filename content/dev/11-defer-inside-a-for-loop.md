@@ -4,6 +4,7 @@ categories = ["technology", "golang"]
 date = 2017-08-02T10:17:25Z
 description = ""
 draft = false
+showDate = true
 slug = "defer-inside-a-for-loop"
 tags = ["technology", "golang"]
 title = "golang: defer inside a for loop"

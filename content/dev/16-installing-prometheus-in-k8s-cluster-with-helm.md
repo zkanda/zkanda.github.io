@@ -3,6 +3,7 @@ author = "Zakatell Kanda"
 date = 2018-09-04T04:10:21Z
 description = ""
 draft = false
+showDate = true
 slug = "installing-prometheus-in-k8s-cluster-with-helm"
 title = "installing prometheus in k8s cluster with helm"
 

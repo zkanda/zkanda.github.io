@@ -4,6 +4,7 @@ categories = ["archlinux", "bootloader", "windows"]
 date = 2017-01-30T05:35:54Z
 description = ""
 draft = false
+showDate = true
 slug = "recently-upgraded-windows-on-my-dual-boot-laptop-causes-problems-on-my-linux"
 tags = ["archlinux", "bootloader", "windows"]
 title = "upgraded windows on my dual boot laptop causes problems on bootloader."

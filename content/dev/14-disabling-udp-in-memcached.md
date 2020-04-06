@@ -4,6 +4,7 @@ categories = ["software", "devops", "technology"]
 date = 2018-03-07T18:54:46Z
 description = ""
 draft = false
+showDate = true
 slug = "disabling-udp-in-memcached"
 tags = ["software", "devops", "technology"]
 title = "disabling udp in memcached."

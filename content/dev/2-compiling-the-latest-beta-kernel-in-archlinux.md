@@ -4,6 +4,7 @@ categories = ["archlinux", "kernel", "compile", "linux", "technology"]
 date = 2016-06-17T01:19:50Z
 description = ""
 draft = false
+showDate = true
 image = "/images/2016/06/compiling-linux-4-6.png"
 slug = "compiling-the-latest-beta-kernel-in-archlinux"
 tags = ["archlinux", "kernel", "compile", "linux", "technology"]

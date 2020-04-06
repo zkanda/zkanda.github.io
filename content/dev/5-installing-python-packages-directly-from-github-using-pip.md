@@ -4,6 +4,7 @@ categories = ["technology", "git", "pip", "python"]
 date = 2016-12-05T04:17:08Z
 description = ""
 draft = false
+showDate = true
 slug = "installing-python-packages-directly-from-github-using-pip"
 tags = ["technology", "git", "pip", "python"]
 title = "installing python packages directly from github using pip"

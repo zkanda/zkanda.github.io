@@ -4,6 +4,7 @@ categories = ["technology", "software", "aws", "linux", "devops"]
 date = 2018-03-19T22:55:57Z
 description = ""
 draft = false
+showDate = true
 slug = "experience-in-resizing-an-ebs-volume-in-ec2-instances"
 tags = ["technology", "software", "aws", "linux", "devops"]
 title = "our experience in resizing an ebs volume in ec2 instances."

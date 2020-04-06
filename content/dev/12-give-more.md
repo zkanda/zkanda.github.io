@@ -4,6 +4,7 @@ categories = ["thoughts", "life"]
 date = 2018-03-05T23:46:53Z
 description = ""
 draft = false
+showDate = true
 slug = "give-more"
 tags = ["thoughts", "life"]
 title = "give more..."

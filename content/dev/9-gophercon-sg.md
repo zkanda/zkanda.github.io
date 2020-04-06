@@ -4,6 +4,7 @@ date = 2017-05-27T05:20:35Z
 description = ""
 draft = false
 slug = "gophercon-sg"
+showDate = true
 tags = ["golang", "conference", "singapore"]
 title = "gophercon sg 2017 reflection"
 
