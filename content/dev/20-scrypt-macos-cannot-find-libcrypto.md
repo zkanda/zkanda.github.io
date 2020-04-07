@@ -1,7 +1,7 @@
 ---
 title: "python scrypt cannot find libcrypto on macos"
 date: 2020-04-07T11:43:40+07:00
-draft: true
+draft: false
 showDate: true
 tags: ["dev", "python", "scrypt", "openssl", "macos"]
 ---
