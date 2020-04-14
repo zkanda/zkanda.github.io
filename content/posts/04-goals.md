@@ -16,6 +16,7 @@ Some shortlist.
 * Short Film Documentary
 * Software Development
 * Surfing
+* Strength Training
 
 In no particular order and that's probably a lot of things already.
 But well, I may not be an expert on any, but I enjoy it, so yeah, fuck it, I'm going to try learning these things.
