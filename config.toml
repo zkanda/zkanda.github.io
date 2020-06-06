@@ -25,10 +25,6 @@ pygmentsCodefences       = true
     text = "posts"
 
 [[params.mainMenu]]
-    link = "gallery"
-    text = "gallery"
-
-[[params.mainMenu]]
     link = "about"
     text = "who is zak?"
 
