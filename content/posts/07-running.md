@@ -16,7 +16,7 @@ Run at least 100km for a month.
 
 Why?
 
-I have some few things in my mid
+I have some few things in my mind.
 * Get in a better shape.
 * Better endurance.
 
