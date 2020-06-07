@@ -29,8 +29,8 @@ pygmentsCodefences       = true
     text = "who is zak?"
 
 [[params.mainMenu]]
-    link = "dev"
-    text = "dev"
+    link = "src"
+    text = "src"
 
 [imaging]
     quality = 75

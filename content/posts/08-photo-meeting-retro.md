@@ -14,6 +14,10 @@ Feelings
 Needs
 Request
 
+Question
+The Meat
+The benediction
+
 Today is the 3rd month when I joined a photographers online meetup. I was invited by my colleauge.
 
 My posting in instagram have been erratic.
