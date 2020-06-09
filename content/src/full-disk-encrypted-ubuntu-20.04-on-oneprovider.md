@@ -2,7 +2,7 @@
 title: "Full Disk Encrypted Ubuntu 20.04 in a small dedicated server."
 date: 2020-06-07T11:46:49+07:00
 showDate: true
-draft: true
+draft: false
 tags: ["sysadmin", "linux", "ubuntu", "kimsufi", "oneprovider", "disk", "encrypted"]
 ---
 
