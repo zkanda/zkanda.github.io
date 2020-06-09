@@ -30,6 +30,12 @@ jobs:
         extended: true
     - name: Build
       run: hugo --minify
+
+    - name: use github action bot
+      run: |
+        git config --local user.name 'github-actions[bot]'
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
