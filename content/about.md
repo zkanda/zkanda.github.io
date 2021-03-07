@@ -4,7 +4,7 @@ date: 2019-08-07T23:52:03+07:00
 draft: false
 ---
 
-![zak](/posts/images/zak-2.jpg)
+![zak](/posts/images/zak-3.jpg)
 
 Hey there! I hope you're having a good day. My name is Zakatell and thank you for visiting my little corner on the internet.
 
@@ -26,4 +26,4 @@ Cheers!
 
 ---
 
-Photo is when I'm trying to shot a self portrait that that changes my lifestyle to be more active.
+Photo is when I'm trying to shot a self portrait that changes my lifestyle to be more active.
