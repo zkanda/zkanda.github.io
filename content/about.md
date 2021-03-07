@@ -17,8 +17,10 @@ This quote is fascinating because it feels like a recursion.
 If you stumbled here, then you probably found my post intriguing or wanna know me a little. Here are some small details:
 
 * A software developer currently working for [engageSPARK](https://www.engagespark.com). It's a fantastic company with awesome people, come [join us](https://www.engagespark.com/careers).
-* Photography as a hobby.
-* Reading books, from novels to self-help.
+* I like capturing timeless moments of people.
+* I lift weights.
+* I play guitar.
+* I read books and listen to music.
 
 If you're still reading then I'm more interested in you, hit me up an email: hi at zkanda.io, let's get some coffee maybe?
 
