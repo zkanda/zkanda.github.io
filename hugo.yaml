@@ -3,7 +3,8 @@
 baseURL: "https://zkanda.io/"
 title: Zakatell Kanda
 copyright: "© [Zakatell Kanda](https://zkanda.io)"
-paginate: 5
+pagination:
+  pageSize: 5
 theme: ["PaperMod"]
 
 enableInlineShortcodes: true
